@@ -1,0 +1,5 @@
+one set | instr/call 2090 |   one set                                          20000      3.748      0.19    5336172       2.0         91         0   0.00   0.00        0    3.715-3.824   
+four sets (the echo#Data body) | instr/call 8514 |   four sets (the echo#Data body)                   20000      9.670      0.48    2068319       4.0        364         0   0.00   0.00        0    9.627-9.723   
+set#One (one set) | instr/call 158582 |   set#One (one set)                                10000     82.083      8.21     121829      88.0      11960      1807   0.00   0.00        0   77.062-86.930  
+echo#Inline (four sets) | instr/call 202766 |   echo#Inline (four sets)                          10000    108.683     10.87      92010     121.0      14710      1603   0.00   0.00        0  106.974-144.507 
+BasicServices.echo#Data | instr/call 182841 |   BasicServices.echo#Data (typed parameters)       10000     82.976      8.30     120517      94.0      13102      1568   0.00   0.00        0   82.228-102.519 
