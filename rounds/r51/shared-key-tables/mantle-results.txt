@@ -1,0 +1,3 @@
+k0 1947 features: 1947 passed, 0 failed, 0 ignored, 0 skipped; 240 specs in 307.25s
+k1 1947 features: 1947 passed, 0 failed, 0 ignored, 0 skipped; 240 specs in 300.75s
+k2 1947 features: 1943 passed, 2 failed, 0 ignored, 2 skipped; 240 specs in 311.95s

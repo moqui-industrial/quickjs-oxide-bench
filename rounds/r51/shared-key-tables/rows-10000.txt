@@ -1,0 +1,16 @@
+walk itemList | k0: 1096007 1091534
+walk itemList | k2: 1093016 1092765
+100 reads of item.name | k0: 281782 281831
+100 reads of item.name | k2: 278899 282928
+100 objects made | k0: 504911 508510
+100 objects made | k2: 508117 507991
+cached entity finds | k0: 515853 518351
+cached entity finds | k2: 515189 520685
+JSON stringify | k0: 1473669 1466097
+JSON stringify | k2: 1471923 1474283
+ec.user.nowTimestamp | k0: 431664 429270
+ec.user.nowTimestamp | k2: 433214 435308
+10 noop service calls | k0: 5239478 5233111
+10 noop service calls | k2: 5200428 5171578
+walk an entity list | k0: 1908296 1910186
+walk an entity list | k2: 1909939 1904634

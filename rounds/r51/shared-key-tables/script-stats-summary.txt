@@ -1,0 +1,3 @@
+k0 {'heap_at_max': 79413604, 'heap_bytes_max': 80436636, 'engines_live_max': 31, 'engines_started': 264, 'released_idle': 101}
+k1 {'heap_at_max': 79114853, 'heap_bytes_max': 79602029, 'engines_live_max': 31, 'engines_started': 265, 'released_idle': 103}
+k2 {'heap_at_max': 65348090, 'heap_bytes_max': 65709818, 'engines_live_max': 31, 'engines_started': 267, 'released_idle': 105}

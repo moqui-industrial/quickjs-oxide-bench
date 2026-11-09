@@ -1,0 +1,18 @@
+k2   this thread's engine, after the rows: 1 runtime, heap reserves 789 KiB (351 KiB live at the last collection); 581 code units (473 KiB of instructions, positio
+k2   engine start (a thread's first script)               1      1.651   1651.04        606    6421.0    2471885   1105528   0.00   0.00   718996    1.414-2.338   
+k2   then first render, List html 20 rows                 1      2.727   2727.34        367   16247.0    1803274    614043   0.00   0.00   343134    2.532-35.950  
+k2   a new thread's engine after its first script: 1 runtime, heap reserves 703 KiB (301 KiB live at the last collection); 579 code units (472 KiB of instructions,
+k2   the same after List html: 1 runtime, heap reserves 812 KiB (368 KiB live at the last collection); 857 code units (953 KiB of instructions, positions and sourc
+k2   the same after Plain html: 1 runtime, heap reserves 812 KiB (369 KiB live at the last collection); 860 code units (955 KiB of instructions, positions and sour
+k2   this thread's engine, after the rows: 1 runtime, heap reserves 789 KiB (351 KiB live at the last collection); 581 code units (473 KiB of instructions, positio
+k2   engine start (a thread's first script)               1      1.428   1428.06        700    6422.0    2471949   1106403   0.00   0.00   718996    1.406-2.508   
+k2   then first render, List html 20 rows                 1      2.556   2555.81        391   16247.0    1803274    614184   0.00   0.00   343134    2.533-35.394  
+k2   a new thread's engine after its first script: 1 runtime, heap reserves 703 KiB (301 KiB live at the last collection); 579 code units (472 KiB of instructions,
+k2   the same after List html: 1 runtime, heap reserves 812 KiB (368 KiB live at the last collection); 857 code units (953 KiB of instructions, positions and sourc
+k2   the same after Plain html: 1 runtime, heap reserves 812 KiB (369 KiB live at the last collection); 860 code units (955 KiB of instructions, positions and sour
+k2   this thread's engine, after the rows: 1 runtime, heap reserves 789 KiB (351 KiB live at the last collection); 581 code units (473 KiB of instructions, positio
+k2   engine start (a thread's first script)               1      1.648   1647.96        607    6503.0    2480553   1107461   0.00   0.00   718996    1.411-2.732   
+k2   then first render, List html 20 rows                 1      2.673   2673.19        374   16247.0    1803274    614265   0.00   0.00   343134    2.519-34.168  
+k2   a new thread's engine after its first script: 1 runtime, heap reserves 703 KiB (301 KiB live at the last collection); 579 code units (472 KiB of instructions,
+k2   the same after List html: 1 runtime, heap reserves 812 KiB (368 KiB live at the last collection); 857 code units (953 KiB of instructions, positions and sourc
+k2   the same after Plain html: 1 runtime, heap reserves 812 KiB (369 KiB live at the last collection); 860 code units (955 KiB of instructions, positions and sour
