@@ -13,6 +13,12 @@ ap.add_argument("--to", dest="end", type=int, default=10**12)
 ap.add_argument("--top", type=int, default=30)
 args = ap.parse_args()
 
+def fn_of(frame):
+    """A frame's function: name:line, or a native's name_(native) as it is."""
+    name, sep, _ = frame.rpartition(":")
+    return name if sep else frame
+
+
 self_line, self_fn, incl_fn = collections.Counter(), collections.Counter(), collections.Counter()
 total = 0
 for number, line in enumerate(open(args.file), 1):
@@ -26,8 +32,8 @@ for number, line in enumerate(open(args.file), 1):
     total += count
     leaf = frames[-1]
     self_line[leaf] += count
-    self_fn[leaf.rpartition(":")[0]] += count
-    for fn in {f.rpartition(":")[0] for f in frames}:
+    self_fn[fn_of(leaf)] += count
+    for fn in {fn_of(f) for f in frames}:
         incl_fn[fn] += count
 
 print(f"{total} samples")
