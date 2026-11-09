@@ -1,0 +1,53 @@
+# walk itemList, 100 context maps: perf record -F 999 -g, frame pointers, M2b source (a664e02e + M2b), fork ddba97fe
+## self (top 30)
+     5.16%  [.] moqui_core::script::oxide::convert::to_init::<quickjs_oxide::engine::api::core::exotic::ExoticScope>
+     4.51%  [.] <moqui_core::script::oxide::engine::OxideEngine>::key
+     4.09%  [.] oxide_core::vm::object::store
+     3.83%  [.] _int_free_merge_chunk
+     3.39%  [.] _int_malloc
+     3.06%  [.] <quickjs_oxide::engine::api::core::ops::View>::visit_plain_own_text
+     2.53%  [.] _int_free_chunk
+     2.44%  [.] <oxide_core::heap::Heap>::plain_data_entries::{closure#0}
+     2.42%  [.] oxide_core::vm::object::ordinary_define
+     2.29%  [.] <oxide_core::heap::Heap>::mark_from_roots
+     2.21%  [.] oxide_core::vm::interp::run_at
+     2.08%  [.] <quickjs_oxide::engine::api::core::ops::View>::object_from
+     1.94%  [.] <oxide_core::heap::Heap>::sweep
+     1.80%  [.] <oxide_core::heap::Heap>::plain_data_entries
+     1.80%  [.] moqui_core::script::oxide::tracked::matches_in_place::<quickjs_oxide::engine::api::core::exotic::ExoticScope>::{closure#1}
+     1.68%  [.] <quickjs_oxide::engine::api::core::ops::View>::lower_init
+     1.62%  [.] <quickjs_oxide::engine::api::core::ops::View>::lift
+     1.49%  [.] <oxide_core::heap::Heap>::add_slots
+     1.47%  [.] core::ptr::drop_glue::<quickjs_oxide::engine::api::core::property::InitValue>
+     1.46%  [.] <quickjs_oxide::engine::api::core::property::TextRef>::eq_str
+     1.29%  [.] <oxide_core::heap::Heap>::alloc_string_record
+     1.27%  [.] <quickjs_oxide::engine::api::core::ops::View>::key
+     1.21%  [.] <oxide_core::heap::string::StringRepr>::from_text
+     1.19%  [.] __libc_malloc2
+     1.14%  [.] moqui_core::script::oxide::convert::to_js_at::<quickjs_oxide::engine::api::core::exotic::ExoticScope>
+     1.12%  [.] <oxide_core::heap::Heap>::shape_lookup
+     1.07%  [.] <quickjs_oxide::engine::api::core::runtime::Runtime>::enter
+     1.06%  [.] oxide_core::vm::object::define_own_property
+     1.02%  [.] oxide_core::vm::object::ordinary_get_own
+     1.02%  [.] <oxide_core::embed::NativeCx>::define_own_property
+## inclusive (conversion and compare)
+    53.59%     0.00%  [.] moqui_core::script::oxide::tracked::read_name::<quickjs_oxide::engine::api::core::exotic::ExoticScope>
+    53.40%     0.10%  [.] <moqui_lib::context_stack::ContextStack>::with_value::<core::result::Result<core::result::Result<(quickjs_oxide::engine::api::core::value::Value
+    52.32%     1.14%  [.] moqui_core::script::oxide::convert::to_js_at::<quickjs_oxide::engine::api::core::exotic::ExoticScope>
+    35.90%     0.02%  [.] <quickjs_oxide::engine::api::core::exotic::ExoticScope>::new_array_from_inits
+    32.68%     1.68%  [.] <quickjs_oxide::engine::api::core::ops::View>::lower_init
+    31.81%     2.08%  [.] <quickjs_oxide::engine::api::core::ops::View>::object_from
+    25.64%     0.05%  [.] moqui_core::script::oxide::tracked::flush::<quickjs_oxide::engine::api::core::context::Context>
+    25.56%     0.02%  [.] <moqui_lib::context_stack::ContextStack>::with_value::<core::result::Result<core::option::Option<(bool, core::option::Option<u64>)>, moqui_core:
+    24.41%     0.97%  [.] moqui_core::script::oxide::tracked::matches_in_place::<quickjs_oxide::engine::api::core::context::Context>
+    12.69%     5.16%  [.] moqui_core::script::oxide::convert::to_init::<quickjs_oxide::engine::api::core::exotic::ExoticScope>
+    11.01%     1.02%  [.] <oxide_core::embed::NativeCx>::define_own_property
+    10.05%     0.35%  [.] <oxide_core::heap::Heap>::collect
+     9.28%     2.42%  [.] oxide_core::vm::object::ordinary_define
+     7.40%     1.29%  [.] <oxide_core::heap::Heap>::alloc_string_record
+     5.91%     1.80%  [.] moqui_core::script::oxide::tracked::matches_in_place::<quickjs_oxide::engine::api::core::exotic::ExoticScope>::{closure#1}
+     5.44%     4.51%  [.] <moqui_core::script::oxide::engine::OxideEngine>::key
+     4.95%     1.21%  [.] <oxide_core::heap::string::StringRepr>::from_text
+     1.40%     1.06%  [.] oxide_core::vm::object::define_own_property
+     0.73%     0.44%  [.] moqui_core::script::oxide::tracked::scalar_matches
+     0.70%     0.46%  [.] moqui_core::script::oxide::tracked::matches_in_place::<quickjs_oxide::engine::api::core::exotic::ExoticScope>::{closure#0}

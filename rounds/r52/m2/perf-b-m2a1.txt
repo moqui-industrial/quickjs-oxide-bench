@@ -1,0 +1,4 @@
+walk itemList, 100 context maps | instr/call 1019426 |   walk itemList, 100 context maps                  20000   1202.746     60.14      16629     406.9      26004        -0   0.00   0.00       -0 1200.446-1208.848
+value `itemList.length` (100 maps) | instr/call 909447 |   value `itemList.length` (100 maps)               20000   1117.486     55.87      17897     407.0      34115        -1   0.00   0.00       -1 1114.824-1119.550
+10 noop service calls, itemList tracked | instr/call 3179078 |   10 noop service calls, itemList tracked          20000   3371.636    168.58       5932    1332.0     115340     16030   0.00   0.00        0 3353.531-3410.139
+iterate 100 context maps with if and set | instr/call 3571394 |   iterate 100 context maps with if and set         20000   4883.193    244.16       4096    1897.4      99902        -0   0.00   0.00       -0 4855.482-4894.786
