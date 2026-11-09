@@ -1,0 +1,11 @@
+1947 features: 1946 passed, 1 failed, 0 ignored, 0 skipped; 240 specs in 300.56s
+main atoms 23121 reserved KiB 17961 image units 6244 key entries 64890
+moqui-worker-18 atoms 11417 reserved KiB 2855 image units 3721 key entries 36062
+moqui-worker-10 atoms 11282 reserved KiB 3123 image units 3786 key entries 36182
+moqui-worker-1 atoms 9943 reserved KiB 2839 image units 3131 key entries 30572
+moqui-worker-9 atoms 9142 reserved KiB 2983 image units 2918 key entries 28348
+moqui-worker-4 atoms 7463 reserved KiB 2245 image units 2476 key entries 20483
+moqui-worker-5 atoms 7436 reserved KiB 1898 image units 2377 key entries 19584
+moqui-worker-13 atoms 7382 reserved KiB 2395 image units 2346 key entries 18521
+
+[exited with code 0]

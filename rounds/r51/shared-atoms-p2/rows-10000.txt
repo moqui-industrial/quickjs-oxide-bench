@@ -1,0 +1,11 @@
+walk itemList | p2: 1090273 1097184
+100 reads of item.name | p2: 275678 276289
+JSON stringify | p2: 1470042 1467970
+$esc | p2: 768895 764959
+1000 string concatenations | p2: 1828445 1826993
+split('') | p2: 1232421 1234001
+1000 numbers to text | p2: 2951573 2949932
+JSON.parse of the locked | p2: 143788 139986
+100 objects made | p2: 508127 504503
+cached entity finds | p2: 512607 515115
+regexp scan | p2: 2951969 2955656
