@@ -1,0 +1,4 @@
+test-apps2.log:3410 features: 3410 passed, 0 failed, 0 ignored, 0 skipped; 447 specs in 161.56s
+test-apps2.log:19 features: 19 passed, 0 failed, 0 ignored, 0 skipped; 12 specs in 90.87s
+test-apps.log:3410 features: 3410 passed, 0 failed, 0 ignored, 0 skipped; 447 specs in 171.71s
+test-apps.log:19 features: 19 passed, 0 failed, 0 ignored, 0 skipped; 12 specs in 98.23s
