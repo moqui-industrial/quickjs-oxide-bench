@@ -35,9 +35,8 @@ between servers; mask the numbers (or compare Entities, whose output is fixed).
 - **`MOQUI_JS_SAMPLE=<file>`**: the script sampler (quickjs-oxide's `Runtime::start_sampling`), folded stacks under
   each render's path. `samples_table.py <file> [--from N --to M]` gives self and inclusive shares by function; render
   one screen and mode at a time, since lines append in order. `name_(native)` frames are builtins and host functions.
-  Until mr-moqui's pin is at f873d7e7, build with the fork's path for the sampler that attributes native time:
-  `cargo --config 'patch."https://github.com/moqui/quickjs-oxide".quickjs-oxide.path="../quickjs-oxide"' build ...`
-  (in its own `CARGO_TARGET_DIR`, then `git checkout Cargo.lock`).
+  The sampler is in every build since mr-moqui pinned quickjs-oxide at 223a2047; f873d7e7 counts the time in a
+  native function as the native's.
 - **`MOQUI_UNIT_DUMP=<dir>`**: each generated screen unit and mode runtime as a file, to read the code a render runs.
 - **perf** on a frame-pointer build: `inclusive.py` gives inclusive shares from `perf script -F ip,sym` output.
 
