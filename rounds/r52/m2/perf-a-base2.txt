@@ -1,0 +1,4 @@
+10 cached entity finds | instr/call 518207 |   10 cached entity finds                           20000    888.425     44.42      22512     576.2      51283        32   0.00   0.00        0  885.661-892.937 
+walk an entity list, 100 cached rows | instr/call 1908333 |   walk an entity list, 100 cached rows             20000   3065.372    153.27       6524    2340.0     272480         0   0.00   0.00       -0 3054.682-3073.142
+entity-find-one, cached | instr/call 52098 |   entity-find-one, cached                          20000     94.072      4.70     212602      53.0       3301         0   0.00   0.00        0   93.867-97.155  
+find#Cached (10 cached finds) | instr/call 714582 |   find#Cached (10 cached finds)                    10000    578.273     57.83      17293     657.2      62458      1597   0.00   0.00       13  569.687-642.004 
