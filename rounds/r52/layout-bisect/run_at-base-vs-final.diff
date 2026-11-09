@@ -1,0 +1,8 @@
+2c2
+< /home/jonesde/work/moquiwork/quickjs-oxide-bench/work/r52/base/js_speed:     file format elf64-x86-64
+---
+> /home/jonesde/work/moquiwork/quickjs-oxide-bench/work/r52/final/js_speed:     file format elf64-x86-64
+2932c2932
+< mov    0x208(%rcx),%ecx
+---
+> mov    0x210(%rcx),%ecx
