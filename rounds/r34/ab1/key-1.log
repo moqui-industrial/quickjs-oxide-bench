@@ -1,0 +1,64 @@
+
+running 1 test
+database: embedded Postgres, Unix socket
+
+script engine oxide (small-oxide for expressions), 2000 calls (1000 for services, 200 for screens) x 5 batches, warmup 32. ExecutionContext entered, authorization disabled.
+
+== scripts on quickjs-oxide (oxide): one entry, the work inside
+  scripts on quickjs-oxide (oxide): one entry, the work inside: batch 1/5
+  scripts on quickjs-oxide (oxide): one entry, the work inside: batch 2/5
+  scripts on quickjs-oxide (oxide): one entry, the work inside: batch 3/5
+  scripts on quickjs-oxide (oxide): one entry, the work inside: batch 4/5
+  scripts on quickjs-oxide (oxide): one entry, the work inside: batch 5/5
+  operation                                        calls  median ms   us/call    calls/s    allocs      bytes      kept    sql     rt  js kept        min-max ms
+  empty script                                      2000      0.400      0.20    5002326       0.0          0         0   0.00   0.00        0    0.399-0.403   
+  1000 adds to a local                              2000     16.200      8.10     123455       0.0         44        22   0.00   0.00        0   15.996-16.841  
+  1000 adds to a bare name (context)                2000    732.213    366.11       2731       0.0          2        -0   0.00   0.00        0  726.551-742.824 
+  100 objects made and walked, locals               2000     55.659     27.83      35933     100.2        920       -44   0.00   0.00        0   53.755-56.168  
+  walk itemList, 100 context maps                   2000    313.695    156.85       6376    2417.6     104202         7   0.00   0.00        0  313.612-316.081 
+  100 reads of item.name (context map)              2000     35.751     17.88      55943      25.0       1278       -43   0.00   0.00        0   35.561-36.014  
+  100 decimal multiply + add                        2000    187.612     93.81      10660    1215.7      48055       223   0.00   0.00        0  186.786-188.233 
+  100 ec.user.nowTimestamp (host getter)            2000     84.570     42.29      23649     702.1      18187      -123   0.00   0.00        0   84.177-86.405  
+  10 cached entity finds                            2000    117.177     58.59      17068     716.2      53913       143   0.00   0.00        0  117.045-117.933 
+  walk an entity list, 100 cached rows              2000    378.313    189.16       5287    2653.5     271908       420   0.00   0.00        0  377.510-379.318 
+  100 cache gets (a host method, a text argument)    2000     69.199     34.60      28902     610.0      12588      -775   0.00   0.00        0   68.843-69.783  
+  10 noop service calls                             2000    186.546     93.27      10721     890.1      85915     16007   0.00   0.00        0  186.049-188.123 
+  10 noop service calls, itemList tracked           2000    680.501    340.25       2939    5019.7     273067     15799   0.00   0.00        0  679.894-681.377 
+  1000 string concatenations                        2000    281.932    140.97       7094    1024.7       7859       244   0.00   0.00        0  281.665-282.203 
+  JSON stringify + parse of 100 objects             2000    223.243    111.62       8959    1215.8      41268      -142   0.00   0.00        0  222.420-223.471 
+
+== templates on quickjs-oxide (oxide: both forms; the locked one in its sandbox runtime) over 20 items
+  templates on quickjs-oxide (oxide: both forms; the locked one in its sandbox runtime) over 20 items: batch 1/5
+  templates on quickjs-oxide (oxide: both forms; the locked one in its sandbox runtime) over 20 items: batch 2/5
+  templates on quickjs-oxide (oxide: both forms; the locked one in its sandbox runtime) over 20 items: batch 3/5
+  templates on quickjs-oxide (oxide: both forms; the locked one in its sandbox runtime) over 20 items: batch 4/5
+  templates on quickjs-oxide (oxide: both forms; the locked one in its sandbox runtime) over 20 items: batch 5/5
+  operation                                        calls  median ms   us/call    calls/s    allocs      bytes      kept    sql     rt  js kept        min-max ms
+  fancy, trusted (live context)                     2000    173.619     86.81      11519     714.3      32970        -1   0.00   0.00        0  173.346-173.805 
+  fancy, locked down (a snapshot)                   2000    179.990     90.00      11112     884.7      48645       307   0.00   0.00        0  178.846-180.188 
+
+== screens on quickjs-oxide (oxide: generation, units and their scripts): the js-speed fixture screens
+  screens on quickjs-oxide (oxide: generation, units and their scripts): the js-speed fixture screens: batch 1/5
+  screens on quickjs-oxide (oxide: generation, units and their scripts): the js-speed fixture screens: batch 2/5
+  screens on quickjs-oxide (oxide: generation, units and their scripts): the js-speed fixture screens: batch 3/5
+  screens on quickjs-oxide (oxide: generation, units and their scripts): the js-speed fixture screens: batch 4/5
+  screens on quickjs-oxide (oxide: generation, units and their scripts): the js-speed fixture screens: batch 5/5
+  operation                                        calls  median ms   us/call    calls/s    allocs      bytes      kept    sql     rt  js kept        min-max ms
+  Plain, html (one label)                            200      5.660     28.30      35334     253.2      18109      2016   0.00   0.00        0    5.609-5.785   
+  Labels, html (40 expanded labels)                  200     59.595    297.98       3356    2752.8     130365      1974   0.00   0.00        0   59.452-59.703  
+  Single, html (form-single, 11 fields)              200     87.359    436.80       2289    3878.6     204454      1879   0.00   0.00        0   87.078-87.554  
+  Single.qvt (form-single, 11 fields)                200    145.868    729.34       1371    6424.1     343447      1768   0.00   0.00        0  145.319-146.214 
+  List, html, 20 rows                                200    453.425   2267.13        441   20865.9     985286      1993   0.00   0.00        0  452.122-453.863 
+  List, html, 100 rows                               200   2108.273  10541.36         95  101290.4    4708999      2240   0.00   0.00        0 2101.355-2110.465
+  Plain.qvt                                          200      5.043     25.22      39659     237.1      16896      2285   0.00   0.00        0    4.963-5.115   
+  List.qvt, 100 rows                                 200   3222.052  16110.26         62  124710.5    6384000      1363   0.00   0.00        0 3216.796-3229.201
+  List, text, 100 rows                               200    582.167   2910.83        344   36304.8    1818239      1045   0.00   0.00        0  580.919-584.626 
+
+  this thread's engine, after the rows: 1 engine(s), malloc 886 KiB in 8614 blocks, QuickJS estimate 757 KiB; 1347 objects, 760 strings (73 KiB), 276 shapes, 624 functions (33 KiB bytecode); cached: 2 compiled scripts (0 KiB source), 0 screen units (0 KiB source), 0 templates
+  quickjs-oxide: 1 runtime, heap reserves 2637 KiB (750 KiB live at the last collection); 1363 code units (1680 KiB of instructions, positions and source); cached: 85 compiled expressions (315 KiB source)
+
+  scripts by kind: eval_condition 0 QuickJS / 1032 oxide, eval_value 0 QuickJS / 40254 oxide, run_actions 1 QuickJS / 207864 oxide, run_script 1 QuickJS / 150480 oxide, template 0 QuickJS / 10032 oxide, host 1 QuickJS / 0 oxide; oxide runtimes started 1, fallbacks to QuickJS 0, texts compiled 85, heap 2686 KiB (most 2959 KiB); texts checked 0
+test script_speed ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 54.28s
+

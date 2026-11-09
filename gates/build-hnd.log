@@ -1,0 +1,11 @@
+   Compiling autocfg v1.5.1
+   Compiling quickjs-oxide-regexp v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-hnd/regexp)
+   Compiling quickjs-oxide-cli v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-hnd/apps/cli)
+   Compiling tz-rs v0.7.3
+   Compiling num-traits v0.2.19
+   Compiling num-integer v0.1.46
+   Compiling quickjs-oxide-core v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-hnd/core)
+   Compiling num-bigint v0.5.1
+   Compiling quickjs-oxide v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-hnd)
+   Compiling quickjs-oxide-host v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-hnd/adapters/native)
+    Finished `release` profile [optimized] target(s) in 23.91s

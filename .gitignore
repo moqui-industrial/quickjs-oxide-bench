@@ -1,0 +1,6 @@
+# Worktrees, binaries, suites and traces (see README, "Working files").
+/work/
+target/
+*.data
+*.zst
+__pycache__/

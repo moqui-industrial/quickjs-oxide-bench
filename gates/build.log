@@ -1,0 +1,11 @@
+/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs
+== host-exotic
+/home/jonesde/work/moquiwork/quickjs-oxide-host-exotic/target/release/qjs
+== reentry
+/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs
+== integ
+/home/jonesde/work/moquiwork/quickjs-oxide-integ/target/release/qjs
+== code-images
+/home/jonesde/work/moquiwork/quickjs-oxide-code-images/target/release/qjs
+37 workloads in /home/jonesde/work/moquiwork/oxide-bench/suite-matrix
+== builds done

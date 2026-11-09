@@ -1,0 +1,49 @@
+## fixed
+
+| Workload | base ms | base G instr | candidate ms | candidate G instr | candidate / base time | candidate / base instr |
+|---|---|---|---|---|---|---|
+| numeric_local_loop | 205 | 6.20 | 208 | 6.20 | 1.02 | 1.0000 |
+| numeric_coercion_loop | 237 | 5.87 | 237 | 5.87 | 1.00 | 1.0000 |
+| local_read_with_setup | 208 | 5.89 | 215 | 5.89 | 1.03 | 1.0000 |
+| local_read | 208 | 5.89 | 213 | 5.89 | 1.03 | 1.0000 |
+| bigint_32 | 270 | 5.82 | 269 | 5.82 | 1.00 | 1.0001 |
+| bigint_64 | 267 | 5.75 | 267 | 5.75 | 1.00 | 1.0001 |
+| bigint_256 | 259 | 5.58 | 259 | 5.58 | 1.00 | 1.0000 |
+| prop_read | 198 | 6.00 | 199 | 6.00 | 1.01 | 1.0000 |
+| prop_write | 199 | 6.24 | 199 | 6.24 | 1.00 | 1.0000 |
+| array_read | 223 | 6.65 | 225 | 6.65 | 1.01 | 1.0000 |
+| array_write | 235 | 6.88 | 236 | 6.88 | 1.00 | 1.0000 |
+| call0 | 251 | 5.53 | 255 | 5.53 | 1.02 | 1.0000 |
+| string_bridge | 236 | 4.85 | 237 | 4.85 | 1.00 | 1.0000 |
+| type_error | 289 | 5.28 | 271 | 5.27 | 0.94 | 0.9974 |
+| tdz | 317 | 5.52 | 297 | 5.52 | 0.93 | 1.0002 |
+| local_move | 178 | 5.36 | 179 | 5.36 | 1.00 | 1.0000 |
+| argument_move | 176 | 5.41 | 177 | 5.41 | 1.01 | 1.0000 |
+| number_owner_fallback | 165 | 4.94 | 164 | 4.94 | 1.00 | 1.0000 |
+| object_move | 170 | 5.18 | 166 | 5.18 | 0.98 | 1.0000 |
+| empty_loop | 203 | 6.14 | 202 | 6.14 | 1.00 | 1.0000 |
+
+candidate / base time, geometric mean over 20 workloads: 1.00
+candidate / base instructions, geometric mean over 20 workloads: 0.9999
+
+## v8
+
+| Workload | base ms | base G instr | candidate ms | candidate G instr | candidate / base time | candidate / base instr |
+|---|---|---|---|---|---|---|
+| v8-v7-richards | 893 | 18.11 | 880 | 18.11 | 0.98 | 1.0000 |
+| v8-v7-deltablue | 861 | 17.79 | 874 | 17.79 | 1.02 | 1.0000 |
+| v8-v7-crypto | 584 | 15.00 | 571 | 15.00 | 0.98 | 1.0000 |
+| v8-v7-raytrace | 778 | 15.54 | 768 | 15.55 | 0.99 | 1.0000 |
+| v8-v7-earley-boyer | 637 | 12.92 | 626 | 12.92 | 0.98 | 1.0000 |
+| v8-v7-regexp | 962 | 21.40 | 966 | 21.40 | 1.00 | 1.0000 |
+| v8-v7-splay | 1149 | 18.68 | 1150 | 18.68 | 1.00 | 1.0000 |
+| v8-v7-navier-stokes | 824 | 22.41 | 819 | 22.41 | 0.99 | 1.0000 |
+
+candidate / base time, geometric mean over 8 workloads: 0.99
+candidate / base instructions, geometric mean over 8 workloads: 1.0000
+
+## Gates
+
+- Instruction gate (eight V8 v7 programs, at most ×1.02): pass
+- Loop-size gate (run_at below 16384 bytes): 15210 bytes, pass
+- Samples: all passed

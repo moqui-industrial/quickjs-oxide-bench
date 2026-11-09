@@ -1,0 +1,3325 @@
+{
+  "metadata": {
+    "machine": {
+      "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+      "machine": "x86_64",
+      "cpu": "AMD Ryzen 9 9900X 12-Core Processor",
+      "logical_cpus": 24,
+      "python": "3.14.4",
+      "cpu_affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "scaling_governors": {
+        "0": "powersave",
+        "1": "powersave",
+        "2": "powersave",
+        "3": "powersave",
+        "4": "powersave",
+        "5": "powersave",
+        "6": "powersave",
+        "7": "powersave",
+        "8": "powersave",
+        "9": "powersave",
+        "10": "powersave",
+        "11": "powersave",
+        "12": "powersave",
+        "13": "powersave",
+        "14": "powersave",
+        "15": "powersave",
+        "16": "powersave",
+        "17": "powersave",
+        "18": "powersave",
+        "19": "powersave",
+        "20": "powersave",
+        "21": "powersave",
+        "22": "powersave",
+        "23": "powersave"
+      },
+      "load_average": [
+        1.2314453125,
+        3.55224609375,
+        4.953125
+      ],
+      "macos": null,
+      "runner_sha256": "25d6e86b97f6e0e545cbd5723b19a4a98ead49f45aabfd0023660a759e728d2d",
+      "repository": {
+        "commit": {
+          "command": [
+            "git",
+            "rev-parse",
+            "HEAD"
+          ],
+          "exit_code": 0,
+          "stdout": "3a9ceb9664dadcb2c8128f444a6530ab796dd146",
+          "stderr": ""
+        },
+        "tree": {
+          "command": [
+            "git",
+            "rev-parse",
+            "HEAD^{tree}"
+          ],
+          "exit_code": 0,
+          "stdout": "b65e282ae5d513eb642fd92f5ba96d018bd70f69",
+          "stderr": ""
+        },
+        "top_level": {
+          "command": [
+            "git",
+            "rev-parse",
+            "--show-toplevel"
+          ],
+          "exit_code": 0,
+          "stdout": "/home/jonesde/work/moquiwork/oxide-bench/base",
+          "stderr": ""
+        },
+        "status": {
+          "command": [
+            "git",
+            "status",
+            "--porcelain"
+          ],
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      }
+    },
+    "runner_sha256": "9f982009c1a00728a2eaad523811cf2d64578f21e9d2d4004208b37de15d4531",
+    "manifest_sha256": "d1a6516ba10f70d1627a18f37d2767235d80467a38fa5fb611ef841ff06a6b0e",
+    "workloads": [
+      {
+        "case": "v8-v7-richards",
+        "size": 400,
+        "path": "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-richards.js",
+        "sha256": "4a6c20d18150028576ac86ddeb6d61e13c44f4f1cf02dbbae1be6655d05e9e0e",
+        "expected": "__oxide_suite_fixed_complete__:v8-v7:richards:Richardsx400\n",
+        "sources": {
+          "v8-v7/base.js": "ac383759c3cbf5f3a499ade526a4e296f7925733d8c3889b6d5840ce6867ff51",
+          "v8-v7/richards.js": "d86eac4108343a54ba6e10621a77b46f82f554c3b0a46e8fb4032d5cf65a2a11"
+        }
+      },
+      {
+        "case": "v8-v7-deltablue",
+        "size": 200,
+        "path": "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-deltablue.js",
+        "sha256": "88f9070f7c6aefc1c36035d6da8d385b3f213c39ef9337d174ca5a22301eb131",
+        "expected": "__oxide_suite_fixed_complete__:v8-v7:deltablue:DeltaBluex200\n",
+        "sources": {
+          "v8-v7/base.js": "ac383759c3cbf5f3a499ade526a4e296f7925733d8c3889b6d5840ce6867ff51",
+          "v8-v7/deltablue.js": "74b5a95f4877701073c6efef08e4ae306562747067e292925b69cbd629a511b9"
+        }
+      },
+      {
+        "case": "v8-v7-crypto",
+        "size": 22,
+        "path": "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-crypto.js",
+        "sha256": "90ceedc8a6cfe31ff6d91bc57471f49c6960e30c820b0f08b83d10d3d3a601db",
+        "expected": "__oxide_suite_fixed_complete__:v8-v7:crypto:Encryptx11,Decryptx11\n",
+        "sources": {
+          "v8-v7/base.js": "ac383759c3cbf5f3a499ade526a4e296f7925733d8c3889b6d5840ce6867ff51",
+          "v8-v7/crypto.js": "5321d2ada9b61e01d5f281609513467cbaa7c0effb12c577ed08088d812453af"
+        }
+      },
+      {
+        "case": "v8-v7-raytrace",
+        "size": 40,
+        "path": "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-raytrace.js",
+        "sha256": "205b0e02a56edec919ac502209ccfeb042292a21dde0ac303aa4c98ef27cb3ad",
+        "expected": "__oxide_suite_fixed_complete__:v8-v7:raytrace:RayTracex40\n",
+        "sources": {
+          "v8-v7/base.js": "ac383759c3cbf5f3a499ade526a4e296f7925733d8c3889b6d5840ce6867ff51",
+          "v8-v7/raytrace.js": "d52183ca324cdb88d9ee3e78326433fe2ca28d6436f0a6c3ec013ab67cb798eb"
+        }
+      },
+      {
+        "case": "v8-v7-earley-boyer",
+        "size": 24,
+        "path": "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-earley-boyer.js",
+        "sha256": "c07ed758ae9807f26450b37a7ae66d05658998c91d264c97b73389b5e50e606e",
+        "expected": "__oxide_suite_fixed_complete__:v8-v7:earley-boyer:Earleyx12,Boyerx12\n",
+        "sources": {
+          "v8-v7/base.js": "ac383759c3cbf5f3a499ade526a4e296f7925733d8c3889b6d5840ce6867ff51",
+          "v8-v7/earley-boyer.js": "dbf3aeb6b3d056e8ea35b5f19aa8c8a4fb1053e41d07f096c22483b2c1c6ee01"
+        }
+      },
+      {
+        "case": "v8-v7-regexp",
+        "size": 7,
+        "path": "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-regexp.js",
+        "sha256": "96377542c69429af524cb82d11db763d17eacedbe31ff776673a887792856972",
+        "expected": "__oxide_suite_fixed_complete__:v8-v7:regexp:RegExpx7\n",
+        "sources": {
+          "v8-v7/base.js": "ac383759c3cbf5f3a499ade526a4e296f7925733d8c3889b6d5840ce6867ff51",
+          "v8-v7/regexp.js": "5268b0d15931fda4e331de35fc58e5beded9a250b60764e1cc7cfc898ab53602"
+        }
+      },
+      {
+        "case": "v8-v7-splay",
+        "size": 800,
+        "path": "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-splay.js",
+        "sha256": "92f702e973aab678009894123700de9da8050b23865746f53ab395aa4c1fed17",
+        "expected": "__oxide_suite_fixed_complete__:v8-v7:splay:Splayx800\n",
+        "sources": {
+          "v8-v7/base.js": "ac383759c3cbf5f3a499ade526a4e296f7925733d8c3889b6d5840ce6867ff51",
+          "v8-v7/splay.js": "1f875cec579d03af40d256ceaeb6823f3ef16c883652650ca51d183472a8185d"
+        }
+      },
+      {
+        "case": "v8-v7-navier-stokes",
+        "size": 20,
+        "path": "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-navier-stokes.js",
+        "sha256": "a19918010fc00236080040221d3941d6752c5dd050dc9c5c8accfad892fe29bf",
+        "expected": "__oxide_suite_fixed_complete__:v8-v7:navier-stokes:NavierStokesx20\n",
+        "sources": {
+          "v8-v7/base.js": "ac383759c3cbf5f3a499ade526a4e296f7925733d8c3889b6d5840ce6867ff51",
+          "v8-v7/navier-stokes.js": "ce241465ffeee77b5c4f7119f522aa971fe1fe92c3aed76f7514ea43e07fec84"
+        }
+      }
+    ],
+    "engines": {
+      "base": {
+        "path": "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "sha256": "0a1696dc234cbbd8a2ff874f5916262b255b4ff65879c0249c872a3923eefdff",
+        "version": {
+          "command": [
+            "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+            "--version"
+          ],
+          "exit_code": 0,
+          "stdout": "quickjs-oxide 0.4.1 (QuickJS 2026-06-04 compatibility target)",
+          "stderr": ""
+        },
+        "build": {
+          "schema": "oxide-build-v3",
+          "mode": "plain",
+          "features": [],
+          "commit": "3a9ceb9664dadcb2c8128f444a6530ab796dd146",
+          "source": {
+            "commit": {
+              "command": [
+                "git",
+                "rev-parse",
+                "HEAD"
+              ],
+              "exit_code": 0,
+              "stdout": "3a9ceb9664dadcb2c8128f444a6530ab796dd146",
+              "stderr": ""
+            },
+            "tree": {
+              "command": [
+                "git",
+                "rev-parse",
+                "HEAD^{tree}"
+              ],
+              "exit_code": 0,
+              "stdout": "b65e282ae5d513eb642fd92f5ba96d018bd70f69",
+              "stderr": ""
+            },
+            "top_level": {
+              "command": [
+                "git",
+                "rev-parse",
+                "--show-toplevel"
+              ],
+              "exit_code": 0,
+              "stdout": "/home/jonesde/work/moquiwork/oxide-bench/base",
+              "stderr": ""
+            },
+            "status": {
+              "command": [
+                "git",
+                "status",
+                "--porcelain"
+              ],
+              "exit_code": 0,
+              "stdout": "",
+              "stderr": ""
+            }
+          },
+          "binary_sha256": "0a1696dc234cbbd8a2ff874f5916262b255b4ff65879c0249c872a3923eefdff",
+          "tooling": {
+            "repository": {
+              "commit": {
+                "command": [
+                  "git",
+                  "rev-parse",
+                  "HEAD"
+                ],
+                "exit_code": 0,
+                "stdout": "3a9ceb9664dadcb2c8128f444a6530ab796dd146",
+                "stderr": ""
+              },
+              "tree": {
+                "command": [
+                  "git",
+                  "rev-parse",
+                  "HEAD^{tree}"
+                ],
+                "exit_code": 0,
+                "stdout": "b65e282ae5d513eb642fd92f5ba96d018bd70f69",
+                "stderr": ""
+              },
+              "top_level": {
+                "command": [
+                  "git",
+                  "rev-parse",
+                  "--show-toplevel"
+                ],
+                "exit_code": 0,
+                "stdout": "/home/jonesde/work/moquiwork/oxide-bench/base",
+                "stderr": ""
+              },
+              "status": {
+                "command": [
+                  "git",
+                  "status",
+                  "--porcelain"
+                ],
+                "exit_code": 0,
+                "stdout": "",
+                "stderr": ""
+              }
+            },
+            "snapshots": {
+              "build.py": {
+                "path": "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs.build.tooling-build.py",
+                "sha256": "99205080a4ea8325176677b563e3bb6a931928fa1f519eefeea8a050b07de485"
+              },
+              "common.py": {
+                "path": "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs.build.tooling-common.py",
+                "sha256": "25d6e86b97f6e0e545cbd5723b19a4a98ead49f45aabfd0023660a759e728d2d"
+              }
+            }
+          },
+          "command": [
+            "cargo",
+            "build",
+            "--locked",
+            "--release",
+            "--verbose",
+            "-p",
+            "quickjs-oxide-cli",
+            "--no-default-features",
+            "--target-dir",
+            "/home/jonesde/work/moquiwork/oxide-bench/base-target",
+            "--jobs",
+            "6"
+          ],
+          "cwd": "/home/jonesde/work/moquiwork/oxide-bench/base",
+          "exit_code": 0,
+          "stdout": {
+            "path": "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs.build.stdout.log",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stderr": {
+            "path": "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs.build.stderr.log",
+            "sha256": "c58283a738a452fc4709eba9529ce5e208a3997f4c922b53644ea9efcbcf08d9"
+          },
+          "rustc": {
+            "command": [
+              "rustc",
+              "-vV"
+            ],
+            "exit_code": 0,
+            "stdout": "rustc 1.99.0 (b940084d7 2026-09-28)\nbinary: rustc\ncommit-hash: b940084d7eb6a299eb4bfeb8e34901bc051e7ac4\ncommit-date: 2026-09-28\nhost: x86_64-unknown-linux-gnu\nrelease: 1.99.0\nLLVM version: 23.1.1",
+            "stderr": ""
+          },
+          "cargo": {
+            "command": [
+              "cargo",
+              "-V"
+            ],
+            "exit_code": 0,
+            "stdout": "cargo 1.99.0 (5f94df478 2026-08-27)",
+            "stderr": ""
+          },
+          "cargo_toml_sha256": "8213a02c2701bd6174e03161057e2ff7766b20f561976d822b2c5fe1df1f5766",
+          "cargo_lock_sha256": "1b9b76e25fddfac65fb7db8173ca61d0776189ee8c7d9548415a0777b05abc72",
+          "release_profile": {
+            "manifest": {
+              "lto": "\"fat\"",
+              "codegen-units": "1"
+            },
+            "environment_overrides": {},
+            "cargo_config_sha256": {},
+            "qjs_rustc_invocation": {
+              "command": "/home/jonesde/.rustup/toolchains/1.99.0-x86_64-unknown-linux-gnu/bin/rustc --crate-name qjs --edition=2024 apps/cli/src/main.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C opt-level=3 -C lto=fat -C codegen-units=1 '--warn=clippy::all' --forbid=unsafe_code '--allow=clippy::collapsible_match' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values(\"default\", \"gc-stress\", \"ic-stats\", \"register-stress\", \"test262-host\"))' -C metadata=ccdd093c5550fafa -C extra-filename=-1971e394198520da --out-dir /home/jonesde/work/moquiwork/oxide-bench/base-target/release/deps -C strip=debuginfo -L dependency=/home/jonesde/work/moquiwork/oxide-bench/base-target/release/deps --extern quickjs_oxide=/home/jonesde/work/moquiwork/oxide-bench/base-target/release/deps/libquickjs_oxide-df56bcc707a56a0d.rlib --extern quickjs_oxide_host=/home/jonesde/work/moquiwork/oxide-bench/base-target/release/deps/libquickjs_oxide_host-1f691c262e8ca951.rlib -C link-arg=-Wl,--symbol-ordering-file=/home/jonesde/work/moquiwork/oxide-bench/base/apps/cli/qjs.order -C link-arg=-Wl,--no-warn-symbol-ordering",
+              "crate": "qjs",
+              "codegen": {
+                "opt-level": "3",
+                "lto": "fat",
+                "codegen-units": "1"
+              },
+              "target": null
+            },
+            "observed_rustc_compilations": 12,
+            "observed_codegen_groups": [
+              {
+                "target": null,
+                "codegen": {},
+                "crates": [
+                  "autocfg",
+                  "build_script_build",
+                  "build_script_build"
+                ]
+              },
+              {
+                "target": null,
+                "codegen": {
+                  "opt-level": "3",
+                  "codegen-units": "1"
+                },
+                "crates": [
+                  "oxide_regexp",
+                  "tz",
+                  "num_traits",
+                  "num_integer",
+                  "oxide_core",
+                  "num_bigint",
+                  "quickjs_oxide",
+                  "quickjs_oxide_host"
+                ]
+              },
+              {
+                "target": null,
+                "codegen": {
+                  "opt-level": "3",
+                  "lto": "fat",
+                  "codegen-units": "1"
+                },
+                "crates": [
+                  "qjs"
+                ]
+              }
+            ]
+          },
+          "target": {
+            "requested_triple": null,
+            "rustc_host": "x86_64-unknown-linux-gnu",
+            "observed_triple": null,
+            "observed_target_cpu": null,
+            "observed_target_feature": null
+          },
+          "commit_environment": "3a9ceb9664dadcb2c8128f444a6530ab796dd146"
+        }
+      },
+      "candidate": {
+        "path": "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "sha256": "dd487c592cbcfb37a94d46403f799aad487c5df4c2f80ac67716dd72dcc2d446",
+        "version": {
+          "command": [
+            "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+            "--version"
+          ],
+          "exit_code": 0,
+          "stdout": "quickjs-oxide 0.4.1 (QuickJS 2026-06-04 compatibility target)",
+          "stderr": ""
+        },
+        "build": {
+          "schema": "oxide-build-v3",
+          "mode": "plain",
+          "features": [],
+          "commit": "82a2f32f7db7dde55607f3731b8e3f5ebe361414",
+          "source": {
+            "commit": {
+              "command": [
+                "git",
+                "rev-parse",
+                "HEAD"
+              ],
+              "exit_code": 0,
+              "stdout": "82a2f32f7db7dde55607f3731b8e3f5ebe361414",
+              "stderr": ""
+            },
+            "tree": {
+              "command": [
+                "git",
+                "rev-parse",
+                "HEAD^{tree}"
+              ],
+              "exit_code": 0,
+              "stdout": "35bad59ea656a6b02b1da2f8036983984c4c46b6",
+              "stderr": ""
+            },
+            "top_level": {
+              "command": [
+                "git",
+                "rev-parse",
+                "--show-toplevel"
+              ],
+              "exit_code": 0,
+              "stdout": "/home/jonesde/work/moquiwork/quickjs-oxide-reentry",
+              "stderr": ""
+            },
+            "status": {
+              "command": [
+                "git",
+                "status",
+                "--porcelain"
+              ],
+              "exit_code": 0,
+              "stdout": "",
+              "stderr": ""
+            }
+          },
+          "binary_sha256": "dd487c592cbcfb37a94d46403f799aad487c5df4c2f80ac67716dd72dcc2d446",
+          "tooling": {
+            "repository": {
+              "commit": {
+                "command": [
+                  "git",
+                  "rev-parse",
+                  "HEAD"
+                ],
+                "exit_code": 0,
+                "stdout": "82a2f32f7db7dde55607f3731b8e3f5ebe361414",
+                "stderr": ""
+              },
+              "tree": {
+                "command": [
+                  "git",
+                  "rev-parse",
+                  "HEAD^{tree}"
+                ],
+                "exit_code": 0,
+                "stdout": "35bad59ea656a6b02b1da2f8036983984c4c46b6",
+                "stderr": ""
+              },
+              "top_level": {
+                "command": [
+                  "git",
+                  "rev-parse",
+                  "--show-toplevel"
+                ],
+                "exit_code": 0,
+                "stdout": "/home/jonesde/work/moquiwork/quickjs-oxide-reentry",
+                "stderr": ""
+              },
+              "status": {
+                "command": [
+                  "git",
+                  "status",
+                  "--porcelain"
+                ],
+                "exit_code": 0,
+                "stdout": "",
+                "stderr": ""
+              }
+            },
+            "snapshots": {
+              "build.py": {
+                "path": "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs.build.tooling-build.py",
+                "sha256": "99205080a4ea8325176677b563e3bb6a931928fa1f519eefeea8a050b07de485"
+              },
+              "common.py": {
+                "path": "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs.build.tooling-common.py",
+                "sha256": "25d6e86b97f6e0e545cbd5723b19a4a98ead49f45aabfd0023660a759e728d2d"
+              }
+            }
+          },
+          "command": [
+            "cargo",
+            "build",
+            "--locked",
+            "--release",
+            "--verbose",
+            "-p",
+            "quickjs-oxide-cli",
+            "--no-default-features",
+            "--target-dir",
+            "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target",
+            "--jobs",
+            "6"
+          ],
+          "cwd": "/home/jonesde/work/moquiwork/quickjs-oxide-reentry",
+          "exit_code": 0,
+          "stdout": {
+            "path": "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs.build.stdout.log",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stderr": {
+            "path": "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs.build.stderr.log",
+            "sha256": "a0b97232716f16351015720010821225c7396f2ee8ab209726da8cf602ee74eb"
+          },
+          "rustc": {
+            "command": [
+              "rustc",
+              "-vV"
+            ],
+            "exit_code": 0,
+            "stdout": "rustc 1.99.0 (b940084d7 2026-09-28)\nbinary: rustc\ncommit-hash: b940084d7eb6a299eb4bfeb8e34901bc051e7ac4\ncommit-date: 2026-09-28\nhost: x86_64-unknown-linux-gnu\nrelease: 1.99.0\nLLVM version: 23.1.1",
+            "stderr": ""
+          },
+          "cargo": {
+            "command": [
+              "cargo",
+              "-V"
+            ],
+            "exit_code": 0,
+            "stdout": "cargo 1.99.0 (5f94df478 2026-08-27)",
+            "stderr": ""
+          },
+          "cargo_toml_sha256": "8213a02c2701bd6174e03161057e2ff7766b20f561976d822b2c5fe1df1f5766",
+          "cargo_lock_sha256": "1b9b76e25fddfac65fb7db8173ca61d0776189ee8c7d9548415a0777b05abc72",
+          "release_profile": {
+            "manifest": {
+              "lto": "\"fat\"",
+              "codegen-units": "1"
+            },
+            "environment_overrides": {},
+            "cargo_config_sha256": {},
+            "qjs_rustc_invocation": {
+              "command": "/home/jonesde/.rustup/toolchains/1.99.0-x86_64-unknown-linux-gnu/bin/rustc --crate-name qjs --edition=2024 apps/cli/src/main.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C opt-level=3 -C lto=fat -C codegen-units=1 '--warn=clippy::all' --forbid=unsafe_code '--allow=clippy::collapsible_match' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values(\"default\", \"gc-stress\", \"ic-stats\", \"register-stress\", \"test262-host\"))' -C metadata=ccdd093c5550fafa -C extra-filename=-1971e394198520da --out-dir /home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/deps -C strip=debuginfo -L dependency=/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/deps --extern quickjs_oxide=/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/deps/libquickjs_oxide-df56bcc707a56a0d.rlib --extern quickjs_oxide_host=/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/deps/libquickjs_oxide_host-1f691c262e8ca951.rlib -C link-arg=-Wl,--symbol-ordering-file=/home/jonesde/work/moquiwork/quickjs-oxide-reentry/apps/cli/qjs.order -C link-arg=-Wl,--no-warn-symbol-ordering",
+              "crate": "qjs",
+              "codegen": {
+                "opt-level": "3",
+                "lto": "fat",
+                "codegen-units": "1"
+              },
+              "target": null
+            },
+            "observed_rustc_compilations": 6,
+            "observed_codegen_groups": [
+              {
+                "target": null,
+                "codegen": {
+                  "opt-level": "3",
+                  "codegen-units": "1"
+                },
+                "crates": [
+                  "oxide_regexp",
+                  "oxide_core",
+                  "quickjs_oxide",
+                  "quickjs_oxide_host"
+                ]
+              },
+              {
+                "target": null,
+                "codegen": {},
+                "crates": [
+                  "build_script_build"
+                ]
+              },
+              {
+                "target": null,
+                "codegen": {
+                  "opt-level": "3",
+                  "lto": "fat",
+                  "codegen-units": "1"
+                },
+                "crates": [
+                  "qjs"
+                ]
+              }
+            ]
+          },
+          "target": {
+            "requested_triple": null,
+            "rustc_host": "x86_64-unknown-linux-gnu",
+            "observed_triple": null,
+            "observed_target_cpu": null,
+            "observed_target_feature": null
+          },
+          "commit_environment": "82a2f32f7db7dde55607f3731b8e3f5ebe361414"
+        }
+      }
+    },
+    "repeat": 4,
+    "order_strategy": "abba",
+    "timeout_seconds": 180,
+    "cpu": 2,
+    "darwin_counters": false,
+    "linux_counters": [
+      "instructions:u",
+      "cycles:u",
+      "task-clock"
+    ],
+    "counter_scope": "whole process including startup and teardown",
+    "callgrind": null,
+    "metric": "whole-process wall nanoseconds; not adaptive scores"
+  },
+  "summary": [
+    {
+      "case": "v8-v7-richards",
+      "size": 400,
+      "engine": "base",
+      "eligible": true,
+      "successful_wall_ns": [
+        900299863,
+        893663940,
+        893307553,
+        890391120
+      ],
+      "failures": [],
+      "median_wall_ns": 893485746.5
+    },
+    {
+      "case": "v8-v7-richards",
+      "size": 400,
+      "engine": "candidate",
+      "eligible": true,
+      "successful_wall_ns": [
+        881436731,
+        885638603,
+        878702325,
+        876817577
+      ],
+      "failures": [],
+      "median_wall_ns": 880069528.0
+    },
+    {
+      "case": "v8-v7-deltablue",
+      "size": 200,
+      "engine": "base",
+      "eligible": true,
+      "successful_wall_ns": [
+        865873441,
+        855377384,
+        854931768,
+        874755388
+      ],
+      "failures": [],
+      "median_wall_ns": 860625412.5
+    },
+    {
+      "case": "v8-v7-deltablue",
+      "size": 200,
+      "engine": "candidate",
+      "eligible": true,
+      "successful_wall_ns": [
+        876416604,
+        870805624,
+        872314179,
+        886870504
+      ],
+      "failures": [],
+      "median_wall_ns": 874365391.5
+    },
+    {
+      "case": "v8-v7-crypto",
+      "size": 22,
+      "engine": "base",
+      "eligible": true,
+      "successful_wall_ns": [
+        586355369,
+        577696547,
+        599699444,
+        581697414
+      ],
+      "failures": [],
+      "median_wall_ns": 584026391.5
+    },
+    {
+      "case": "v8-v7-crypto",
+      "size": 22,
+      "engine": "candidate",
+      "eligible": true,
+      "successful_wall_ns": [
+        578717177,
+        569815233,
+        571802482,
+        570489882
+      ],
+      "failures": [],
+      "median_wall_ns": 571146182.0
+    },
+    {
+      "case": "v8-v7-raytrace",
+      "size": 40,
+      "engine": "base",
+      "eligible": true,
+      "successful_wall_ns": [
+        786122411,
+        776727936,
+        778749599,
+        777229644
+      ],
+      "failures": [],
+      "median_wall_ns": 777989621.5
+    },
+    {
+      "case": "v8-v7-raytrace",
+      "size": 40,
+      "engine": "candidate",
+      "eligible": true,
+      "successful_wall_ns": [
+        766564377,
+        766732255,
+        772335425,
+        768369424
+      ],
+      "failures": [],
+      "median_wall_ns": 767550839.5
+    },
+    {
+      "case": "v8-v7-earley-boyer",
+      "size": 24,
+      "engine": "base",
+      "eligible": true,
+      "successful_wall_ns": [
+        638217870,
+        652967053,
+        632763050,
+        635502659
+      ],
+      "failures": [],
+      "median_wall_ns": 636860264.5
+    },
+    {
+      "case": "v8-v7-earley-boyer",
+      "size": 24,
+      "engine": "candidate",
+      "eligible": true,
+      "successful_wall_ns": [
+        625994948,
+        625277569,
+        620970196,
+        638057802
+      ],
+      "failures": [],
+      "median_wall_ns": 625636258.5
+    },
+    {
+      "case": "v8-v7-regexp",
+      "size": 7,
+      "engine": "base",
+      "eligible": true,
+      "successful_wall_ns": [
+        965762355,
+        960823972,
+        957523345,
+        963330244
+      ],
+      "failures": [],
+      "median_wall_ns": 962077108.0
+    },
+    {
+      "case": "v8-v7-regexp",
+      "size": 7,
+      "engine": "candidate",
+      "eligible": true,
+      "successful_wall_ns": [
+        966259546,
+        965058848,
+        975527041,
+        963886698
+      ],
+      "failures": [],
+      "median_wall_ns": 965659197.0
+    },
+    {
+      "case": "v8-v7-splay",
+      "size": 800,
+      "engine": "base",
+      "eligible": true,
+      "successful_wall_ns": [
+        1146933122,
+        1150853069,
+        1146831346,
+        1151723857
+      ],
+      "failures": [],
+      "median_wall_ns": 1148893095.5
+    },
+    {
+      "case": "v8-v7-splay",
+      "size": 800,
+      "engine": "candidate",
+      "eligible": true,
+      "successful_wall_ns": [
+        1151561251,
+        1148971526,
+        1146083062,
+        1166374021
+      ],
+      "failures": [],
+      "median_wall_ns": 1150266388.5
+    },
+    {
+      "case": "v8-v7-navier-stokes",
+      "size": 20,
+      "engine": "base",
+      "eligible": true,
+      "successful_wall_ns": [
+        822999805,
+        823266839,
+        824316320,
+        824283217
+      ],
+      "failures": [],
+      "median_wall_ns": 823775028.0
+    },
+    {
+      "case": "v8-v7-navier-stokes",
+      "size": 20,
+      "engine": "candidate",
+      "eligible": true,
+      "successful_wall_ns": [
+        820221583,
+        817455723,
+        819456694,
+        818863690
+      ],
+      "failures": [],
+      "median_wall_ns": 819160192.0
+    }
+  ],
+  "samples": [
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-richards.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 900299863,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-0.perf-stat.txt",
+        "raw_sha256": "72baaff7ed795e5a217ea36943f9989b887cf4b5b3523774671caf87ec8bb548",
+        "values": {
+          "instructions": 18111596413,
+          "cycles": 3924603874,
+          "task_clock_ms": 893.97
+        }
+      },
+      "case": "v8-v7-richards",
+      "size": 400,
+      "engine": "base",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-richards.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 881436731,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-0.perf-stat.txt",
+        "raw_sha256": "0c9289a12c61ae49160c6c8bb89d61036298d097168b268a70575d5cb3f495d9",
+        "values": {
+          "instructions": 18111594955,
+          "cycles": 3839720718,
+          "task_clock_ms": 874.68
+        }
+      },
+      "case": "v8-v7-richards",
+      "size": 400,
+      "engine": "candidate",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-richards.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 885638603,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-1.perf-stat.txt",
+        "raw_sha256": "645b03fd10af663d27cc0d18efb606f074a5cc7a245e34d22f595af77ae54018",
+        "values": {
+          "instructions": 18111594831,
+          "cycles": 3856928508,
+          "task_clock_ms": 878.76
+        }
+      },
+      "case": "v8-v7-richards",
+      "size": 400,
+      "engine": "candidate",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-richards.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 893663940,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-1.perf-stat.txt",
+        "raw_sha256": "cf2f79f006dcbcda0d138dd09b16489f77d93d1a1e042cd559eee517a55b38aa",
+        "values": {
+          "instructions": 18111595526,
+          "cycles": 3896227477,
+          "task_clock_ms": 887.79
+        }
+      },
+      "case": "v8-v7-richards",
+      "size": 400,
+      "engine": "base",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-richards.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 893307553,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-2.perf-stat.txt",
+        "raw_sha256": "7f2583016fb3c875cc9badaf1b6378750f66e4b95afd1b1a667467665ca974ba",
+        "values": {
+          "instructions": 18111597217,
+          "cycles": 3895888560,
+          "task_clock_ms": 888.02
+        }
+      },
+      "case": "v8-v7-richards",
+      "size": 400,
+      "engine": "base",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-richards.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 878702325,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-2.perf-stat.txt",
+        "raw_sha256": "c8a14e4a06a6032519aff232c81b0ba0fded1e21aada9a7d55d9d8c7ec7c9b4f",
+        "values": {
+          "instructions": 18111593357,
+          "cycles": 3834543397,
+          "task_clock_ms": 873.36
+        }
+      },
+      "case": "v8-v7-richards",
+      "size": 400,
+      "engine": "candidate",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-richards.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 876817577,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-candidate-3.perf-stat.txt",
+        "raw_sha256": "c82fca8b46d27c9d40d3ecfa908ee289a001d4a1cdbb90f1ea3df3a99c973d7d",
+        "values": {
+          "instructions": 18111595540,
+          "cycles": 3821528697,
+          "task_clock_ms": 870.19
+        }
+      },
+      "case": "v8-v7-richards",
+      "size": 400,
+      "engine": "candidate",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-richards.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 890391120,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-richards-base-3.perf-stat.txt",
+        "raw_sha256": "893dd14a9a8b4a04c340e30111e5b4370b7771e63cf8d2a16b79f910c6989e6f",
+        "values": {
+          "instructions": 18111597641,
+          "cycles": 3879155439,
+          "task_clock_ms": 883.86
+        }
+      },
+      "case": "v8-v7-richards",
+      "size": 400,
+      "engine": "base",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-deltablue.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 865873441,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-0.perf-stat.txt",
+        "raw_sha256": "17b3dbbde7b6269f12ad0f53c1d646f67fee2d38496246f14c53ed5ceeb9ac58",
+        "values": {
+          "instructions": 17787599616,
+          "cycles": 3770792342,
+          "task_clock_ms": 859.28
+        }
+      },
+      "case": "v8-v7-deltablue",
+      "size": 200,
+      "engine": "base",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-deltablue.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 876416604,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-0.perf-stat.txt",
+        "raw_sha256": "11d468c6ad28229205b9be6b7c627f272b8007d6495c74c649da07ae6959dc1c",
+        "values": {
+          "instructions": 17787665208,
+          "cycles": 3818573939,
+          "task_clock_ms": 870.19
+        }
+      },
+      "case": "v8-v7-deltablue",
+      "size": 200,
+      "engine": "candidate",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-deltablue.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 870805624,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-1.perf-stat.txt",
+        "raw_sha256": "74fbf2746e907e3c8aec12ff33bdf504e20be926537b4e24acff4f3e040fe68f",
+        "values": {
+          "instructions": 17787539198,
+          "cycles": 3795912163,
+          "task_clock_ms": 864.91
+        }
+      },
+      "case": "v8-v7-deltablue",
+      "size": 200,
+      "engine": "candidate",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-deltablue.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 855377384,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-1.perf-stat.txt",
+        "raw_sha256": "cbc2cf9dc2ee99241d0dcee2f05af1a96abba1e1ff85b3585298ef2ae8ab6922",
+        "values": {
+          "instructions": 17787530651,
+          "cycles": 3727466560,
+          "task_clock_ms": 849.19
+        }
+      },
+      "case": "v8-v7-deltablue",
+      "size": 200,
+      "engine": "base",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-deltablue.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 854931768,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-2.perf-stat.txt",
+        "raw_sha256": "68d4913d798162bf7a828dd067f2573ec5ca9a3d3612aed7db2cba0db0dd1a14",
+        "values": {
+          "instructions": 17787584694,
+          "cycles": 3728235011,
+          "task_clock_ms": 849.43
+        }
+      },
+      "case": "v8-v7-deltablue",
+      "size": 200,
+      "engine": "base",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-deltablue.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 872314179,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-2.perf-stat.txt",
+        "raw_sha256": "bffe92278480556bb382fc4e4745034b2dbc2e518a5fb34d5461b984cf416a46",
+        "values": {
+          "instructions": 17787511731,
+          "cycles": 3802470761,
+          "task_clock_ms": 866.56
+        }
+      },
+      "case": "v8-v7-deltablue",
+      "size": 200,
+      "engine": "candidate",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-deltablue.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 886870504,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-candidate-3.perf-stat.txt",
+        "raw_sha256": "de65e89f8b93dbf662f0b12b657f8f53f8f35634e17b1577082873b2e644bf22",
+        "values": {
+          "instructions": 17787563139,
+          "cycles": 3868265904,
+          "task_clock_ms": 881.36
+        }
+      },
+      "case": "v8-v7-deltablue",
+      "size": 200,
+      "engine": "candidate",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-deltablue.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 874755388,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-deltablue-base-3.perf-stat.txt",
+        "raw_sha256": "e455685a7c44b4e5b9c38162e6f3edbf4bbfca44703a3f4b2f3eb9938fd152b9",
+        "values": {
+          "instructions": 17787728036,
+          "cycles": 3813186198,
+          "task_clock_ms": 868.84
+        }
+      },
+      "case": "v8-v7-deltablue",
+      "size": 200,
+      "engine": "base",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-crypto.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 586355369,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-0.perf-stat.txt",
+        "raw_sha256": "9ac11781209e0804669e9fb0bb5d8162d7debfaec354f843ab8f558138d1807c",
+        "values": {
+          "instructions": 14997546934,
+          "cycles": 2543650098,
+          "task_clock_ms": 579.81
+        }
+      },
+      "case": "v8-v7-crypto",
+      "size": 22,
+      "engine": "base",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-crypto.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 578717177,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-0.perf-stat.txt",
+        "raw_sha256": "bd3a7dd37534ea70068aa2a8a948b2310df106224471de01a804f50f76705ff4",
+        "values": {
+          "instructions": 14997535917,
+          "cycles": 2515194309,
+          "task_clock_ms": 573.02
+        }
+      },
+      "case": "v8-v7-crypto",
+      "size": 22,
+      "engine": "candidate",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-crypto.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 569815233,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-1.perf-stat.txt",
+        "raw_sha256": "f29272244912951422070d23a5979437040de4ca60ed62351388e2fa17c825a2",
+        "values": {
+          "instructions": 14997534216,
+          "cycles": 2475483194,
+          "task_clock_ms": 564.22
+        }
+      },
+      "case": "v8-v7-crypto",
+      "size": 22,
+      "engine": "candidate",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-crypto.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 577696547,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-1.perf-stat.txt",
+        "raw_sha256": "8c04c2ff05d37023aed8a3b8e9d2640d3a56c7d5b0d5df6d223aa7c0ed44fdbf",
+        "values": {
+          "instructions": 14997547928,
+          "cycles": 2507987070,
+          "task_clock_ms": 571.8
+        }
+      },
+      "case": "v8-v7-crypto",
+      "size": 22,
+      "engine": "base",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-crypto.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 599699444,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-2.perf-stat.txt",
+        "raw_sha256": "d55fa7a2f2a99451095bbc5c74be81923241237348f77ac1f6694e7373b7a19d",
+        "values": {
+          "instructions": 14997548624,
+          "cycles": 2603662772,
+          "task_clock_ms": 593.63
+        }
+      },
+      "case": "v8-v7-crypto",
+      "size": 22,
+      "engine": "base",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-crypto.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 571802482,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-2.perf-stat.txt",
+        "raw_sha256": "4dbd84763f054aae490bffd8d2ea94924bc549ee8ade7a089734bb3557e3c44c",
+        "values": {
+          "instructions": 14997535386,
+          "cycles": 2477597790,
+          "task_clock_ms": 564.77
+        }
+      },
+      "case": "v8-v7-crypto",
+      "size": 22,
+      "engine": "candidate",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-crypto.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 570489882,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-candidate-3.perf-stat.txt",
+        "raw_sha256": "bb763fc75491917b061d7dcdbf67a44d3daf89ae94b43cd52fb3c527e694de61",
+        "values": {
+          "instructions": 14997533664,
+          "cycles": 2476745155,
+          "task_clock_ms": 564.92
+        }
+      },
+      "case": "v8-v7-crypto",
+      "size": 22,
+      "engine": "candidate",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-crypto.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 581697414,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-crypto-base-3.perf-stat.txt",
+        "raw_sha256": "2f0017648950af09f971bc0c7dbef540a938fc1ce44a0d3bd4cb8aa936c94fb9",
+        "values": {
+          "instructions": 14997545369,
+          "cycles": 2528257497,
+          "task_clock_ms": 576.19
+        }
+      },
+      "case": "v8-v7-crypto",
+      "size": 22,
+      "engine": "base",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-raytrace.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 786122411,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-0.perf-stat.txt",
+        "raw_sha256": "907d9bfe4d1166088be860e3af455649d504f710b8d175d56b5f6b1e0ece841e",
+        "values": {
+          "instructions": 15544968783,
+          "cycles": 3419432741,
+          "task_clock_ms": 779.41
+        }
+      },
+      "case": "v8-v7-raytrace",
+      "size": 40,
+      "engine": "base",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-raytrace.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 766564377,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-0.perf-stat.txt",
+        "raw_sha256": "85c2d94596318c218a7dc1ad236e3e77038cd95483918f68d9c40200e63be31f",
+        "values": {
+          "instructions": 15545012417,
+          "cycles": 3336980270,
+          "task_clock_ms": 760.39
+        }
+      },
+      "case": "v8-v7-raytrace",
+      "size": 40,
+      "engine": "candidate",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-raytrace.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 766732255,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-1.perf-stat.txt",
+        "raw_sha256": "5be358de601c14c2f10e6ba0fc3a9a1eb9c815394ca0fab09009c647e4cf1eea",
+        "values": {
+          "instructions": 15545014499,
+          "cycles": 3333798534,
+          "task_clock_ms": 760.22
+        }
+      },
+      "case": "v8-v7-raytrace",
+      "size": 40,
+      "engine": "candidate",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-raytrace.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 776727936,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-1.perf-stat.txt",
+        "raw_sha256": "b9a9285ae2e7e35d1a18b2e6d2ac59e8dfb63117fb04cb725bc5b83fbd8a33b7",
+        "values": {
+          "instructions": 15544974942,
+          "cycles": 3379218795,
+          "task_clock_ms": 770.08
+        }
+      },
+      "case": "v8-v7-raytrace",
+      "size": 40,
+      "engine": "base",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-raytrace.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 778749599,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-2.perf-stat.txt",
+        "raw_sha256": "5d79dfd8971690ca62efdc491cb5c47a467a489e6301323119873a5c0b8835e2",
+        "values": {
+          "instructions": 15544973122,
+          "cycles": 3387001015,
+          "task_clock_ms": 772.15
+        }
+      },
+      "case": "v8-v7-raytrace",
+      "size": 40,
+      "engine": "base",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-raytrace.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 772335425,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-2.perf-stat.txt",
+        "raw_sha256": "6fe7a0efd0c5285493a0ebb4652cbbb292fb7a4564f76042a5e253c40ae433e3",
+        "values": {
+          "instructions": 15545025019,
+          "cycles": 3360246602,
+          "task_clock_ms": 765.99
+        }
+      },
+      "case": "v8-v7-raytrace",
+      "size": 40,
+      "engine": "candidate",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-raytrace.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 768369424,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-candidate-3.perf-stat.txt",
+        "raw_sha256": "95b0684d4f4856aa61fbb90fac2961d7c6f6535e7e64203e242570e2d3555d5d",
+        "values": {
+          "instructions": 15545023709,
+          "cycles": 3342311659,
+          "task_clock_ms": 761.79
+        }
+      },
+      "case": "v8-v7-raytrace",
+      "size": 40,
+      "engine": "candidate",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-raytrace.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 777229644,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-raytrace-base-3.perf-stat.txt",
+        "raw_sha256": "88b9f66c3afb8b161ce08c44d1df3da0d93eb8c16640b63d9544c0274d664468",
+        "values": {
+          "instructions": 15544967536,
+          "cycles": 3380476853,
+          "task_clock_ms": 770.67
+        }
+      },
+      "case": "v8-v7-raytrace",
+      "size": 40,
+      "engine": "base",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-earley-boyer.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 638217870,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-0.perf-stat.txt",
+        "raw_sha256": "e18abee82fcdd626e62b6608ee4b63f878c384434b859945d5631b59846743e6",
+        "values": {
+          "instructions": 12915651029,
+          "cycles": 2760843803,
+          "task_clock_ms": 632.14
+        }
+      },
+      "case": "v8-v7-earley-boyer",
+      "size": 24,
+      "engine": "base",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-earley-boyer.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 625994948,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-0.perf-stat.txt",
+        "raw_sha256": "fb1f44bd8de3626fa9b4d53ac890f0040a07d07ac07f35760796fa8bb0e8d6ef",
+        "values": {
+          "instructions": 12915650836,
+          "cycles": 2700704904,
+          "task_clock_ms": 618.29
+        }
+      },
+      "case": "v8-v7-earley-boyer",
+      "size": 24,
+      "engine": "candidate",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-earley-boyer.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 625277569,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-1.perf-stat.txt",
+        "raw_sha256": "73d578514a4ee8605c7e421bcd5dd14e0a87828bcbec28c315b04e59a8d8b207",
+        "values": {
+          "instructions": 12915650882,
+          "cycles": 2703840613,
+          "task_clock_ms": 618.89
+        }
+      },
+      "case": "v8-v7-earley-boyer",
+      "size": 24,
+      "engine": "candidate",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-earley-boyer.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 652967053,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-1.perf-stat.txt",
+        "raw_sha256": "4267d7f7a291d55b21f94a654257f064c70a5c5947d4daa8e6182bbc1d499f85",
+        "values": {
+          "instructions": 12915651164,
+          "cycles": 2824552157,
+          "task_clock_ms": 646.63
+        }
+      },
+      "case": "v8-v7-earley-boyer",
+      "size": 24,
+      "engine": "base",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-earley-boyer.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 632763050,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-2.perf-stat.txt",
+        "raw_sha256": "df786631b7c0ddc615e712d46c8ecda1113ea7b012fb8b13ad1058030f3ccd9d",
+        "values": {
+          "instructions": 12915646221,
+          "cycles": 2735870642,
+          "task_clock_ms": 626.38
+        }
+      },
+      "case": "v8-v7-earley-boyer",
+      "size": 24,
+      "engine": "base",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-earley-boyer.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 620970196,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-2.perf-stat.txt",
+        "raw_sha256": "481c38e0035a0b4eb0453e6282007297c5d4528ddfdb6e38556334357742fe10",
+        "values": {
+          "instructions": 12915651676,
+          "cycles": 2685876376,
+          "task_clock_ms": 615.05
+        }
+      },
+      "case": "v8-v7-earley-boyer",
+      "size": 24,
+      "engine": "candidate",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-earley-boyer.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 638057802,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-candidate-3.perf-stat.txt",
+        "raw_sha256": "1b23653ee55feb0edfd74250d5eab3f152a887cce168af9ca54fcab44662a538",
+        "values": {
+          "instructions": 12915652380,
+          "cycles": 2759852748,
+          "task_clock_ms": 631.66
+        }
+      },
+      "case": "v8-v7-earley-boyer",
+      "size": 24,
+      "engine": "candidate",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-earley-boyer.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 635502659,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-earley-boyer-base-3.perf-stat.txt",
+        "raw_sha256": "d65297af39f1b509fbc4fcb767aa0f2ad09f5711329e2469754cfef455ddeec8",
+        "values": {
+          "instructions": 12915647877,
+          "cycles": 2742399353,
+          "task_clock_ms": 628.36
+        }
+      },
+      "case": "v8-v7-earley-boyer",
+      "size": 24,
+      "engine": "base",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-regexp.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 965762355,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-0.perf-stat.txt",
+        "raw_sha256": "a0e08eb3bae2e638cfad9e5ca55c36efdc5d31ed1737cb8d8017a1f0b0431996",
+        "values": {
+          "instructions": 21396487646,
+          "cycles": 4191524767,
+          "task_clock_ms": 958.27
+        }
+      },
+      "case": "v8-v7-regexp",
+      "size": 7,
+      "engine": "base",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-regexp.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 966259546,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-0.perf-stat.txt",
+        "raw_sha256": "eb59aa824609caa5a4d4790bf81be292150670b348c572cc7ce758868f84a0e4",
+        "values": {
+          "instructions": 21396690729,
+          "cycles": 4195624909,
+          "task_clock_ms": 959.37
+        }
+      },
+      "case": "v8-v7-regexp",
+      "size": 7,
+      "engine": "candidate",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-regexp.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 965058848,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-1.perf-stat.txt",
+        "raw_sha256": "1c8b5c1bb5fef48b4b5c092bbcabe09c4b4feaf0fa14fa7a688268b2edf32192",
+        "values": {
+          "instructions": 21395270103,
+          "cycles": 4196608836,
+          "task_clock_ms": 959.25
+        }
+      },
+      "case": "v8-v7-regexp",
+      "size": 7,
+      "engine": "candidate",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-regexp.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 960823972,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-1.perf-stat.txt",
+        "raw_sha256": "380cf470461f6f55fb64a5fa2864beed99c15d4f69e7ca708f7276d28986cc66",
+        "values": {
+          "instructions": 21396808441,
+          "cycles": 4178066466,
+          "task_clock_ms": 954.84
+        }
+      },
+      "case": "v8-v7-regexp",
+      "size": 7,
+      "engine": "base",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-regexp.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 957523345,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-2.perf-stat.txt",
+        "raw_sha256": "a258d6bb369b21f56490d7468adde1eb47ea8a622eeb4d3295084b0a8de1144e",
+        "values": {
+          "instructions": 21395471454,
+          "cycles": 4163177064,
+          "task_clock_ms": 951.37
+        }
+      },
+      "case": "v8-v7-regexp",
+      "size": 7,
+      "engine": "base",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-regexp.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 975527041,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-2.perf-stat.txt",
+        "raw_sha256": "b619b7faaca73cc473b0433fef6d5f9b963b803cf2ed926f282daa5f0b0a5774",
+        "values": {
+          "instructions": 21398243176,
+          "cycles": 4245025275,
+          "task_clock_ms": 969.72
+        }
+      },
+      "case": "v8-v7-regexp",
+      "size": 7,
+      "engine": "candidate",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-regexp.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 963886698,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-candidate-3.perf-stat.txt",
+        "raw_sha256": "57bf00f3f81ad276a1d99e1fd5eec9409dd5c38d716443dd66d095317f8f25f5",
+        "values": {
+          "instructions": 21401347709,
+          "cycles": 4192263872,
+          "task_clock_ms": 958.02
+        }
+      },
+      "case": "v8-v7-regexp",
+      "size": 7,
+      "engine": "candidate",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-regexp.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 963330244,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-regexp-base-3.perf-stat.txt",
+        "raw_sha256": "d53cc1206538476754e867a9a1cd3427151240825285c8693654ffc9e246cb49",
+        "values": {
+          "instructions": 21397912654,
+          "cycles": 4187711128,
+          "task_clock_ms": 957.31
+        }
+      },
+      "case": "v8-v7-regexp",
+      "size": 7,
+      "engine": "base",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-splay.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 1146933122,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-0.perf-stat.txt",
+        "raw_sha256": "bf5a63bda145127feb8607d38debc896342f5899f2b6fe08ce300533c1c30387",
+        "values": {
+          "instructions": 18678964370,
+          "cycles": 4805084867,
+          "task_clock_ms": 1141.34
+        }
+      },
+      "case": "v8-v7-splay",
+      "size": 800,
+      "engine": "base",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-splay.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 1151561251,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-0.perf-stat.txt",
+        "raw_sha256": "b1ab7e421a1a5ecfe1c5f2e631f45a845585f6a80c050fb04d04e052bfb6ff4b",
+        "values": {
+          "instructions": 18679109201,
+          "cycles": 4839661860,
+          "task_clock_ms": 1145.64
+        }
+      },
+      "case": "v8-v7-splay",
+      "size": 800,
+      "engine": "candidate",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-splay.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 1148971526,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-1.perf-stat.txt",
+        "raw_sha256": "be4778579e375bbe57cd50e22f984dab506ec33ffa90f9d5b513dcc9c42bd1c9",
+        "values": {
+          "instructions": 18679233052,
+          "cycles": 4827846366,
+          "task_clock_ms": 1142.96
+        }
+      },
+      "case": "v8-v7-splay",
+      "size": 800,
+      "engine": "candidate",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-splay.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 1150853069,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-1.perf-stat.txt",
+        "raw_sha256": "3cd0a8c103fa26885b0f7b4400ded95a4f11cee477ce073b05dceb6dd58641d8",
+        "values": {
+          "instructions": 18679100700,
+          "cycles": 4817637291,
+          "task_clock_ms": 1144.53
+        }
+      },
+      "case": "v8-v7-splay",
+      "size": 800,
+      "engine": "base",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-splay.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 1146831346,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-2.perf-stat.txt",
+        "raw_sha256": "f591af7d49d70c1fee6902b4c61cb19146d16ca98049517e00ae499838e0f1c5",
+        "values": {
+          "instructions": 18679081149,
+          "cycles": 4817346747,
+          "task_clock_ms": 1140.41
+        }
+      },
+      "case": "v8-v7-splay",
+      "size": 800,
+      "engine": "base",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-splay.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 1146083062,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-2.perf-stat.txt",
+        "raw_sha256": "9186e90175359ed756efe913bf1ca1f58afd3bb24d443c1a588c3f36572e27dd",
+        "values": {
+          "instructions": 18679219013,
+          "cycles": 4815352734,
+          "task_clock_ms": 1140.33
+        }
+      },
+      "case": "v8-v7-splay",
+      "size": 800,
+      "engine": "candidate",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-splay.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 1166374021,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-candidate-3.perf-stat.txt",
+        "raw_sha256": "89997f9db1f9b5704023ebebf550d850e1251eeecbf35eafc9d3c0eb80b6c72e",
+        "values": {
+          "instructions": 18679175071,
+          "cycles": 4900959063,
+          "task_clock_ms": 1159.9
+        }
+      },
+      "case": "v8-v7-splay",
+      "size": 800,
+      "engine": "candidate",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-splay.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 1151723857,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-splay-base-3.perf-stat.txt",
+        "raw_sha256": "3a0d8f25d6d4ffd1d47f44e8e77394f6ab6b3cf653cc678409259201f38e4865",
+        "values": {
+          "instructions": 18679292940,
+          "cycles": 4835170275,
+          "task_clock_ms": 1144.77
+        }
+      },
+      "case": "v8-v7-splay",
+      "size": 800,
+      "engine": "base",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-navier-stokes.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 822999805,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-0.perf-stat.txt",
+        "raw_sha256": "2fe5d4b21cbc6be6710b5b9c3249292edd34f399e9f4a96a32d51a38db09bb65",
+        "values": {
+          "instructions": 22412925038,
+          "cycles": 3583415078,
+          "task_clock_ms": 816.56
+        }
+      },
+      "case": "v8-v7-navier-stokes",
+      "size": 20,
+      "engine": "base",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-0.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-navier-stokes.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 820221583,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-0.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-0.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-0.perf-stat.txt",
+        "raw_sha256": "c12741a7f82091d479543082993772b5971914773494f60c2f417309a5ee95a0",
+        "values": {
+          "instructions": 22412915103,
+          "cycles": 3570323240,
+          "task_clock_ms": 813.71
+        }
+      },
+      "case": "v8-v7-navier-stokes",
+      "size": 20,
+      "engine": "candidate",
+      "repetition": 0,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-navier-stokes.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 817455723,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-1.perf-stat.txt",
+        "raw_sha256": "3cf4418c131118d6eb6fe5d40c1f1ed1571b3ad54673b47262f20ecae03c7941",
+        "values": {
+          "instructions": 22412914867,
+          "cycles": 3561679544,
+          "task_clock_ms": 811.69
+        }
+      },
+      "case": "v8-v7-navier-stokes",
+      "size": 20,
+      "engine": "candidate",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-1.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-navier-stokes.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 823266839,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-1.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-1.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-1.perf-stat.txt",
+        "raw_sha256": "e505b102d1d53e67aaf3a3a8c772c91230083f4eb315d5baf73f801ed6f8789e",
+        "values": {
+          "instructions": 22412924897,
+          "cycles": 3582827024,
+          "task_clock_ms": 816.1
+        }
+      },
+      "case": "v8-v7-navier-stokes",
+      "size": 20,
+      "engine": "base",
+      "repetition": 1,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-navier-stokes.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 824316320,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-2.perf-stat.txt",
+        "raw_sha256": "02cf899ead7ad488d21d5d650041b7bf0af97cd0ac4f724564b1aeffbdb6e097",
+        "values": {
+          "instructions": 22412925072,
+          "cycles": 3587137315,
+          "task_clock_ms": 817.66
+        }
+      },
+      "case": "v8-v7-navier-stokes",
+      "size": 20,
+      "engine": "base",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-2.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-navier-stokes.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 819456694,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-2.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-2.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-2.perf-stat.txt",
+        "raw_sha256": "17b5d0d44797d72bf5e4f0b54d3fc0961271e4771d84aa296f7002f74223da29",
+        "values": {
+          "instructions": 22412915591,
+          "cycles": 3568486285,
+          "task_clock_ms": 813.0
+        }
+      },
+      "case": "v8-v7-navier-stokes",
+      "size": 20,
+      "engine": "candidate",
+      "repetition": 2,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/quickjs-oxide-reentry/target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-navier-stokes.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 818863690,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-candidate-3.perf-stat.txt",
+        "raw_sha256": "4b5589cbaa452ed64abef059f41f629cc35a752cd90d98c633fa88d588f2ae89",
+        "values": {
+          "instructions": 22412914455,
+          "cycles": 3565932479,
+          "task_clock_ms": 812.89
+        }
+      },
+      "case": "v8-v7-navier-stokes",
+      "size": 20,
+      "engine": "candidate",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    },
+    {
+      "command": [
+        "perf",
+        "stat",
+        "-x,",
+        "-e",
+        "instructions:u,cycles:u,task-clock",
+        "-o",
+        "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-3.perf-stat.txt",
+        "--",
+        "taskset",
+        "-c",
+        "2",
+        "/home/jonesde/work/moquiwork/oxide-bench/base-target/release/qjs",
+        "/home/jonesde/work/moquiwork/oxide-bench/suite-matrix/v8-v7-navier-stokes.js"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "process_wall_ns": 824283217,
+      "stdout": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-3.stdout",
+      "stderr": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-3.stderr",
+      "hardware_counters": {
+        "scope": "whole process including startup and teardown",
+        "raw_path": "/home/jonesde/work/moquiwork/oxide-bench/sweep-reentry/v8/raw/v8-v7-navier-stokes-base-3.perf-stat.txt",
+        "raw_sha256": "4a2f2c6ee931b4dd9ce823f4398c1c8998f1c095f48e5038144f25e16b6b42b5",
+        "values": {
+          "instructions": 22412926319,
+          "cycles": 3584878183,
+          "task_clock_ms": 817.02
+        }
+      },
+      "case": "v8-v7-navier-stokes",
+      "size": 20,
+      "engine": "base",
+      "repetition": 3,
+      "semantic_status": "ok",
+      "status": "ok"
+    }
+  ]
+}

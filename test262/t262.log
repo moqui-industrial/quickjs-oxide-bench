@@ -1,0 +1,24 @@
+== host-exotic 0b9e6608
+exit 0
+Test262: total=6844 pass=6814 fail=30 unsupported=0 skipped=0
+execution: runnable=6844 workers=6
+report=/tmp/quickjs-oxide-test262.JY61RQ/focused.tsv
+current focused Test262 vector matches: 6814 pass of 6844 eligible variants.
+== reentry 82a2f32f
+exit 0
+Test262: total=6844 pass=6814 fail=30 unsupported=0 skipped=0
+execution: runnable=6844 workers=6
+report=/tmp/quickjs-oxide-test262.Ltv5XN/focused.tsv
+current focused Test262 vector matches: 6814 pass of 6844 eligible variants.
+== integ 9bb63953
+exit 0
+Test262: total=6844 pass=6814 fail=30 unsupported=0 skipped=0
+execution: runnable=6844 workers=6
+report=/tmp/quickjs-oxide-test262.ngEowZ/focused.tsv
+current focused Test262 vector matches: 6814 pass of 6844 eligible variants.
+== code-images 47f8a78e
+exit 0
+Test262: total=6844 pass=6814 fail=30 unsupported=0 skipped=0
+execution: runnable=6844 workers=6
+report=/tmp/quickjs-oxide-test262.UjRUv2/focused.tsv
+current focused Test262 vector matches: 6814 pass of 6844 eligible variants.

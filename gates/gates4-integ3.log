@@ -1,0 +1,63 @@
+== cargo fmt --all -- --check
+== cargo test --locked --workspace --all-targets
+   
+   test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+   
+== cargo test --locked --workspace --doc
+   
+   test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+   
+== cargo test --locked --workspace --features test262-host --lib --bins
+   
+   test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+   
+== cargo test --locked --features test262-host --test unsupported_diagnostics
+   
+   test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+   
+== cargo test --locked --features test262-host --test oracle test262_
+   
+   test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 206 filtered out; finished in 0.01s
+   
+== cargo clippy --locked --workspace --all-targets --all-features -- -D warnings
+       Checking quickjs-oxide-test262 v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-integ3/conformance/test262)
+       Checking quickjs-oxide-web v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-integ3/apps/web)
+       Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.28s
+== cargo clippy --locked --workspace --lib --bins -- -D warnings
+       Checking quickjs-oxide-test262 v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-integ3/conformance/test262)
+       Checking quickjs-oxide-cli v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-integ3/apps/cli)
+       Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.52s
+== cargo clippy --locked --test oracle -- -D warnings
+       Checking quickjs-oxide-host v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-integ3/adapters/native)
+       Checking quickjs-oxide-cli v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-integ3/apps/cli)
+       Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.17s
+== cargo clippy --locked --workspace --features test262-host --lib --bins -- -D warnings
+       Checking quickjs-oxide-cli v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-integ3/apps/cli)
+       Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.05s
+== cargo clippy --locked --workspace --features test262-host --test unsupported_diagnostics --test oracle -- -D warnings
+       Checking quickjs-oxide-host v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-integ3/adapters/native)
+       Checking quickjs-oxide-cli v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-integ3/apps/cli)
+       Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.29s
+== cargo test --locked -p quickjs-oxide-core --features gc-stress
+   
+   test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+   
+== cargo test --locked -p quickjs-oxide --features gc-stress --lib compiler::register
+   
+   test result: ok. 41 passed; 0 failed; 4 ignored; 0 measured; 434 filtered out; finished in 182.55s
+   
+== cargo build --locked -p quickjs-oxide-cli --features gc-stress --bin qjs
+      Compiling quickjs-oxide-host v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-integ3/adapters/native)
+      Compiling quickjs-oxide-cli v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-integ3/apps/cli)
+       Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.77s
+== python3 scripts/checks/check-gc-stress.py --qjs target/debug/qjs
+   gc stress: 20 probes and 49 corpus programs pass at --gc-stress=1
+== cargo build --locked --release -p quickjs-oxide-cli --features gc-stress --bin qjs --target-dir target/gc-stress-release
+      Compiling quickjs-oxide-host v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-integ3/adapters/native)
+      Compiling quickjs-oxide-cli v0.4.1 (/home/jonesde/work/moquiwork/quickjs-oxide-integ3/apps/cli)
+       Finished `release` profile [optimized] target(s) in 26.51s
+== python3 scripts/checks/check-suite-gc-stress.py --qjs target/gc-stress-release/release/qjs --suite /home/jonesde/work/moquiwork/oxide-bench/suite-pilot1
+   awfy-Storage                 ok        9.8s  --gc-stress=100
+   awfy-Towers                  ok        1.7s  --gc-stress=1
+   suite gc stress: 37 programs pass at --gc-stress=1
+GATES PASS
