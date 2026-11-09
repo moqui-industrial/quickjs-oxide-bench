@@ -1,0 +1,22 @@
+walk itemList | base: 1078844 1078834
+walk itemList | p1d: 1089759 1087987
+100 reads of item.name | base: 281629 279297
+100 reads of item.name | p1d: 283883 280073
+JSON stringify | base: 1447788 1448262
+JSON stringify | p1d: 1465705 1466294
+$esc | base: 761713 757608
+$esc | p1d: 769121 769042
+1000 string concatenations | base: 1774297 1773851
+1000 string concatenations | p1d: 1826676 1827370
+split('') | base: 1228592 1232532
+split('') | p1d: 1231847 1231754
+1000 numbers to text | base: 2900165 2898752
+1000 numbers to text | p1d: 2947565 2946760
+JSON.parse of the locked | base: 135364 137567
+JSON.parse of the locked | p1d: 139929 137563
+100 objects made | base: 510615 504308
+100 objects made | p1d: 508252 508189
+cached entity finds | base: 514110 516317
+cached entity finds | p1d: 515730 513903
+regexp scan | base: 2894664 2899201
+regexp scan | p1d: 2948085 2953492

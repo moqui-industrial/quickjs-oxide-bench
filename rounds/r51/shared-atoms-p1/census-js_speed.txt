@@ -1,0 +1,2 @@
+atom census: atoms 3064 (35300 units), 512 shared: builtin 512 (4617), image code 1395 (14445), static code 0 (0), dynamic code 0 (0), constants 797 (12015), object keys 222 (2826), other 138 (1397)
+atom census: atoms 3064 (35300 units), 512 shared: builtin 512 (4617), image code 1395 (14445), static code 0 (0), dynamic code 0 (0), constants 797 (12015), object keys 222 (2826), other 138 (1397)
