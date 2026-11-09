@@ -1,0 +1,52 @@
+diff --git a/Cargo.lock b/Cargo.lock
+index 3d784915..ff8125aa 100644
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -6424,7 +6424,6 @@ dependencies = [
+ [[package]]
+ name = "quickjs-oxide"
+ version = "0.4.1"
+-source = "git+https://github.com/moqui/quickjs-oxide?rev=1cdb77e2a8c7c2411b48c1f3d975391d785cc46c#1cdb77e2a8c7c2411b48c1f3d975391d785cc46c"
+ dependencies = [
+  "num-bigint 0.5.1",
+  "num-traits",
+@@ -6435,7 +6434,6 @@ dependencies = [
+ [[package]]
+ name = "quickjs-oxide-core"
+ version = "0.4.1"
+-source = "git+https://github.com/moqui/quickjs-oxide?rev=1cdb77e2a8c7c2411b48c1f3d975391d785cc46c#1cdb77e2a8c7c2411b48c1f3d975391d785cc46c"
+ dependencies = [
+  "quickjs-oxide-regexp",
+ ]
+@@ -6443,7 +6441,6 @@ dependencies = [
+ [[package]]
+ name = "quickjs-oxide-regexp"
+ version = "0.4.1"
+-source = "git+https://github.com/moqui/quickjs-oxide?rev=1cdb77e2a8c7c2411b48c1f3d975391d785cc46c#1cdb77e2a8c7c2411b48c1f3d975391d785cc46c"
+ 
+ [[package]]
+ name = "quinn"
+diff --git a/crates/moqui-core/src/script/oxide/engine.rs b/crates/moqui-core/src/script/oxide/engine.rs
+index 10f0aaa8..70c33e54 100644
+--- a/crates/moqui-core/src/script/oxide/engine.rs
++++ b/crates/moqui-core/src/script/oxide/engine.rs
+@@ -1127,6 +1127,19 @@ impl OxideEngine {
+ 
+ impl Drop for OxideEngine {
+     fn drop(&mut self) {
++        // r51 census probe (local only): the runtime's atoms after a collection, before it goes
++        if std::env::var_os("QJS_ATOM_CENSUS").is_some() && !std::thread::panicking() {
++            let runtime = &self.runtime;
++            let address = std::ptr::from_ref(self) as usize;
++            let _ = std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| {
++                let _ = runtime.run_gc();
++                eprintln!(
++                    "atom census drop [{}] runtime={address:#x}",
++                    std::thread::current().name().unwrap_or("?"),
++                );
++                let _ = runtime.memory_report();
++            }));
++        }
+         counts::LIVE.fetch_sub(1, Relaxed);
+         counts::HEAP.fetch_sub(self.heap.get(), Relaxed);
+         moqui_lib::sync::lock(&RUNTIME_HEAPS).remove(&(std::thread::current().id(), std::ptr::from_ref(self) as usize));
