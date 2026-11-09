@@ -1,0 +1,6 @@
+walk itemList | main1: 1088293 1108508 1102164
+walk itemList | f2: 948044 955515 967691
+itemList.length | main1: 1073228 1052517 1041763
+itemList.length | f2: 900006 919128 960520
+itemList tracked | main1: 3454543 3422403 3444707
+itemList tracked | f2: 3163037 3168476 3133087
