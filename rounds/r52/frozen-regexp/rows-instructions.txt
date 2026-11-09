@@ -1,0 +1,29 @@
+fancy, locked | base: 1093739 1085057 1114019
+fancy, locked | f1: 694911 683493 675664
+fancy, trusted | base: 774134 754421 765366
+fancy, trusted | f1: 802370 771233 782923
+esc | base: 900 553
+esc | f1: -7499 11700
+trusted 10k | base: 771171 775217 773009
+trusted 10k | f1: 784178 782456 782827
+trusted 10k | base: 773414 771865 771937
+trusted 10k | f1: 783578 779301 782190
+fancy, trusted 10k | base: 773644 769524 773147
+fancy, trusted 10k | f1b: 782865 779493 783619
+fancy, locked 10k | base: 1091369 1095564 1089959
+fancy, locked 10k | f1b: 674139 673473 674505
+fancy, trusted 10k | base: 769144 773614 771364
+fancy, trusted 10k | f1c: 780558 785407 782031
+fancy, locked 10k | base: 1095646 1096232 1092196
+fancy, locked 10k | f1c: 677953 674812 670537
+fancy, trusted 10k | base: 773538 769344 770695
+fancy, trusted 10k | f1d: 780636 782737 776633
+fancy, locked 10k | base: 1093804 1089648 1091222
+fancy, locked 10k | f1d: 671053 673429 668681
+fancy, trusted 10k | base: 773793 773704 773203
+fancy, trusted 10k | null: 776906 773222 775038
+fancy, trusted 10k | f1d: 784275 780109 784874
+fancy, trusted 10k | null: 771225 773272 769382
+fancy, trusted 10k | f1e: 775151 777061 771644
+fancy, locked 10k | null: 1093610 1092182 1092914
+fancy, locked 10k | f1e: 669042 664159 671761
