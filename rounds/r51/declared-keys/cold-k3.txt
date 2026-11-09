@@ -1,0 +1,6 @@
+k3   engine start (a thread's first script)               1      1.411   1410.64        709    6166.0    2465273   1104353   0.00   0.00   718936    1.389-2.603   
+k3   then first render, List html 20 rows                 1      2.509   2508.76        399   15769.0    1766080    604225   0.00   0.00   342334    2.470-34.478  
+k3   the same after List html: 1 runtime, heap reserves 808 KiB (366 KiB live at the last collection); 857 code units (953 KiB of instructions, positions and sourc
+k3   engine start (a thread's first script)               1      1.412   1412.26        708    6166.0    2465273   1104448   0.00   0.00   718936    1.396-2.559   
+k3   then first render, List html 20 rows                 1      2.503   2502.93        400   15769.0    1766080    603600   0.00   0.00   342334    2.471-33.798  
+k3   the same after List html: 1 runtime, heap reserves 808 KiB (366 KiB live at the last collection); 857 code units (953 KiB of instructions, positions and sourc

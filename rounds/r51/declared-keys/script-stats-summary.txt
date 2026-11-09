@@ -1,0 +1,1 @@
+k3 {'heap_at_max': 73980359, 'heap_bytes_max': 74060314, 'engines_live_max': 31, 'engines_started': 265, 'released_idle': 103}

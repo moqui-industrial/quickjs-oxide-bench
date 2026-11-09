@@ -1,0 +1,6 @@
+1947 features: 1943 passed, 2 failed, 0 ignored, 2 skipped; 240 specs in 297.68s
+Failures:
+
+FAILED AccountingCollections > an instalment past due is reminded for its portion, and the credit check ages it by its schedule
+FAILED AccountingCollections > an instalment past due is reminded for its portion, and the credit check ages it by its schedule
+FAILED SupportCases > a case's work done leaves it open (a project's case too); Today leaves cases out; a client never sees a case
