@@ -1,0 +1,129 @@
+
+running 1 test
+database: embedded Postgres, Unix socket
+
+2000 calls (1000 for services, 200 for screens) x 5 batches, warmup 32. ExecutionContext entered, authorization disabled.
+
+== expressions: one engine entry each
+  expressions: one engine entry each: batch 1/5
+  expressions: one engine entry each: batch 2/5
+  expressions: one engine entry each: batch 3/5
+  expressions: one engine entry each: batch 4/5
+  expressions: one engine entry each: batch 5/5
+  operation                                        calls  median ms   us/call    calls/s    allocs      bytes      kept    sql     rt  js kept        min-max ms
+  value `a` (a bare name)                           2000      0.800      0.40    2499688       0.0          0         0   0.00   0.00        0    0.797-1.249   
+  value `a + b * 2`                                 2000      1.203      0.60    1662343       0.0          0         0   0.00   0.00        0    1.199-1.832   
+  value `item.name` (a map's field)                 2000      2.589      1.29     772368      12.0        587       -50   0.00   0.00      -49    2.513-4.067   
+  value `{x: a, y: item.name}` (a new map)          2000      3.898      1.95     513124      23.0       1077         8   0.00   0.00        8    3.792-6.087   
+  value `price.multiply(dqty)` (decimals)           2000      3.015      1.51     663409      12.0       1507      -136   0.00   0.00     -229    2.789-4.347   
+  value `itemList.length` (100 maps)                2000    131.527     65.76      15206     706.4      33232       157   0.00   0.00      234  130.872-135.840 
+  condition `status == 'ACTIVE' && qty > 2`         2000      1.449      0.72    1380697       3.0         76         6   0.00   0.00        6    1.438-1.619   
+  expand `Item ${item.itemId}: ${item.name}`        2000      3.329      1.66     600715      14.0        887      -239   0.00   0.00     -239    2.926-3.462   
+  expand plain text, no ${}                         2000      0.043      0.02   46674446       1.0         33         0   0.00   0.00        0    0.042-0.048   
+  value `a + N`, new text each call                 2000      2.163      1.08     924504      13.0       1285       452   0.00   0.00        0    1.019-12.615  
+
+== scripts: one entry, the work inside
+  scripts: one entry, the work inside: batch 1/5
+  scripts: one entry, the work inside: batch 2/5
+  scripts: one entry, the work inside: batch 3/5
+  scripts: one entry, the work inside: batch 4/5
+  scripts: one entry, the work inside: batch 5/5
+  operation                                        calls  median ms   us/call    calls/s    allocs      bytes      kept    sql     rt  js kept        min-max ms
+  empty script                                      2000      0.363      0.18    5515796       0.0          0         0   0.00   0.00        0    0.362-0.363   
+  1000 adds to a local                              2000     16.235      8.12     123188       0.0          8       -76   0.00   0.00      -76   16.027-16.934  
+  1000 adds to a bare name (context)                2000    725.563    362.78       2756       0.0        111        -0   0.00   0.00        0  720.116-728.073 
+  100 objects made and walked, locals               2000     45.884     22.94      43588     100.1        519       -10   0.00   0.00      -10   45.795-46.684  
+  walk itemList, 100 context maps                   2000    134.572     67.29      14862     706.4      31991         1   0.00   0.00        1  133.658-134.783 
+  100 reads of item.name (context map)              2000     33.414     16.71      59855       9.0        428       -12   0.00   0.00      -12   33.053-33.699  
+  100 decimal multiply + add                        2000    138.004     69.00      14492     612.5      28528       238   0.00   0.00      132  137.735-138.306 
+  100 ec.user.nowTimestamp (host getter)            2000     65.236     32.62      30658     502.1      12536      -169   0.00   0.00      -63   64.789-65.631  
+  10 cached entity finds                            2000     90.802     45.40      22026     576.1      49378       893   0.00   0.00       93   89.881-91.078  
+  walk an entity list, 100 cached rows              2000    307.972    153.99       6494    2339.4     261695       137   0.00   0.00        4  306.763-311.046 
+  100 cache gets (a host method, a text argument)    2000     48.196     24.10      41498     206.0        352        96   0.00   0.00        0   48.064-48.878  
+  10 noop service calls                             2000    173.895     86.95      11501     820.0      83419     16115   0.00   0.00        0  173.496-175.148 
+  10 noop service calls, itemList tracked           2000    374.145    187.07       5346    1931.5     127816     15723   0.00   0.00      -32  372.769-376.401 
+  1000 string concatenations                        2000    194.712     97.36      10272    1024.2       7173       323   0.00   0.00      331  194.336-195.102 
+  JSON stringify + parse of 100 objects             2000    139.797     69.90      14306     421.5      24066      -287   0.00   0.00     -287  139.695-140.891 
+  $esc over 100 strings                             2000     81.137     40.57      24650     320.2       9498       -28   0.00   0.00      -28   80.860-81.263  
+  JSON.parse of the locked snapshot                 2000     14.301      7.15     139846      42.1       1838         4   0.00   0.00        4   14.183-14.484  
+  1000 numbers to text                              2000    307.656    153.83       6501     993.7       9306        41   0.00   0.00       41  307.096-307.908 
+  split('') + charAt, 1000 chars                    2000     90.422     45.21      22118       5.2      50193       271   0.00   0.00      271   90.125-90.921  
+  regexp scan of a 200-line log                     2000    330.547    165.27       6051    1578.3      46515         2   0.00   0.00        3  329.371-332.325 
+
+== XML actions, run directly
+  XML actions, run directly: batch 1/5
+  XML actions, run directly: batch 2/5
+  XML actions, run directly: batch 3/5
+  XML actions, run directly: batch 4/5
+  XML actions, run directly: batch 5/5
+  operation                                        calls  median ms   us/call    calls/s    allocs      bytes      kept    sql     rt  js kept        min-max ms
+  empty actions                                     2000      0.554      0.28    3607139       0.0          0         0   0.00   0.00        0    0.551-0.559   
+  one set                                           2000      1.860      0.93    1075367       6.0        140         3   0.00   0.00        3    1.843-2.281   
+  four sets (the echo#Data body)                    2000      5.842      2.92     342345      26.0        653       -11   0.00   0.00        7    5.809-5.955   
+  iterate 100 context maps with if and set          2000    521.429    260.71       3836    2499.6     112384       -14   0.00   0.00      -14  520.347-528.948 
+  entity-find-one, cached                           2000      9.674      4.84     206730      53.0       3346       447   0.00   0.00        1    9.499-10.018  
+
+== services: the service layer around actions and scripts
+  services: the service layer around actions and scripts: batch 1/5
+  services: the service layer around actions and scripts: batch 2/5
+  services: the service layer around actions and scripts: batch 3/5
+  services: the service layer around actions and scripts: batch 4/5
+  services: the service layer around actions and scripts: batch 5/5
+  operation                                        calls  median ms   us/call    calls/s    allocs      bytes      kept    sql     rt  js kept        min-max ms
+  noop#Inline (empty actions)                       1000      8.264      8.26     121000      84.0       9533      1603   0.00   0.00        0    8.028-8.482   
+  set#One (one set)                                 1000      9.699      9.70     103108      96.1      12269       844   0.00   0.00      -18    9.164-10.356  
+  echo#Inline (four sets)                           1000     13.437     13.44      74421     144.0      15403      1628   0.00   0.00       25   13.124-14.048  
+  echo#Script (the same, a .js file)                1000     13.254     13.25      75447     143.1      15052      1580   0.00   0.00      -25   12.835-13.456  
+  BasicServices.echo#Data (typed parameters)        1000     11.821     11.82      84592     120.0      13994      1676   0.00   0.00       20   11.702-12.193  
+  loop#Actions (100 items, XML actions)             1000    340.943    340.94       2933    3389.7     166372      1496   0.00   0.00      -19  339.876-341.779 
+  loop#Script (100 items, one script)               1000     60.687     60.69      16478     570.3      26583      1620   0.00   0.00       18   60.595-61.277  
+  calc#Decimal (20 multiply + add)                  1000     32.771     32.77      30515     369.2      23280      1946   0.00   0.00      248   32.541-32.960  
+  call#Nested (service-call to set#One)             1000     18.145     18.14      55112     180.0      20936      2696   0.00   0.00        9   18.107-18.376  
+  find#Cached (10 cached finds)                     1000     56.452     56.45      17714     657.1      59846      3640   0.00   0.00       13   55.938-56.700  
+
+== templates: the fancy dialect over 20 items (the locked form in its sandbox runtime)
+  templates: the fancy dialect over 20 items (the locked form in its sandbox runtime): batch 1/5
+  templates: the fancy dialect over 20 items (the locked form in its sandbox runtime): batch 2/5
+  templates: the fancy dialect over 20 items (the locked form in its sandbox runtime): batch 3/5
+  templates: the fancy dialect over 20 items (the locked form in its sandbox runtime): batch 4/5
+  templates: the fancy dialect over 20 items (the locked form in its sandbox runtime): batch 5/5
+  operation                                        calls  median ms   us/call    calls/s    allocs      bytes      kept    sql     rt  js kept        min-max ms
+  fancy, trusted (live context)                     2000     98.997     49.50      20203     303.5      14142       -11   0.00   0.00      -11   98.410-100.516 
+  fancy, locked down (a snapshot)                   2000    125.089     62.54      15989     350.4      15174       269   0.00   0.00        0  123.685-129.239 
+
+== screens: the js-speed fixture screens
+  screens: the js-speed fixture screens: batch 1/5
+  screens: the js-speed fixture screens: batch 2/5
+  screens: the js-speed fixture screens: batch 3/5
+  screens: the js-speed fixture screens: batch 4/5
+  screens: the js-speed fixture screens: batch 5/5
+  operation                                        calls  median ms   us/call    calls/s    allocs      bytes      kept    sql     rt  js kept        min-max ms
+  Plain, html (one label)                            200      5.462     27.31      36617     237.2      17630      2016   0.00   0.00       62    5.389-5.486   
+  Labels, html (40 expanded labels)                  200     46.916    234.58       4263    1673.6      68457      1522   0.00   0.00     -429   46.213-47.160  
+  Single, html (form-single, 11 fields)              200     63.902    319.51       3130    2257.8     143338      2600   0.00   0.00      448   63.843-64.229  
+  Single.qvt (form-single, 11 fields)                200    105.021    525.11       1904    3416.7     224312       968   0.00   0.00     -938  103.795-105.358 
+  List, html, 20 rows                                200    347.678   1738.39        575   13570.8     743749      3194   0.00   0.00     1328  345.057-348.967 
+  List, html, 100 rows                               200   1603.934   8019.67        125   65478.4    3520425      3213   0.00   0.00     1249 1600.913-1614.553
+  Plain.qvt                                          200      4.948     24.74      40419     224.2      16481      2286   0.00   0.00      244    4.910-5.015   
+  List.qvt, 100 rows                                 200   2557.009  12785.04         78   79938.7    3907145       411   0.00   0.00    -1446 2554.334-2558.189
+  List, text, 100 rows                               200    433.455   2167.27        461   23478.5    1468336      2121   0.00   0.00      211  432.975-434.881 
+
+  this thread's engine, after the rows: 1 runtime, heap reserves 5993 KiB (1926 KiB live at the last collection); 5447 code units (1891 KiB of instructions, positions and source); cached: 4146 compiled expressions (370 KiB source)
+
+  scripts by kind: eval_condition 11064, eval_value 110484, expand 10032, run_actions 313377, run_script 200641, template 10032; runtimes started 1, texts compiled 4146, heap 5998 KiB (most 6623 KiB)
+
+== a new thread's first script and first screen, 20 threads one after another
+  operation                                        calls  median ms   us/call    calls/s    allocs      bytes      kept    sql     rt  js kept        min-max ms
+  engine start (a thread's first script)               1      1.692   1691.95        591    6166.0    2465273   1102623   0.00   0.00   718936    1.406-2.458   
+  then first render, List html 20 rows                 1      2.609   2608.60        383   15769.0    1766080    604309   0.00   0.00   342334    2.460-10.333  
+  then a second screen, Plain html                     1      0.086     85.62      11679     352.0      38929      3035   0.00   0.00      492    0.078-0.221   
+
+  a new thread's engine after its first script: 1 runtime, heap reserves 703 KiB (299 KiB live at the last collection); 579 code units (472 KiB of instructions, positions and source); cached: 1 compiled expressions (0 KiB source)
+
+  the same after List html: 1 runtime, heap reserves 808 KiB (366 KiB live at the last collection); 857 code units (953 KiB of instructions, positions and source); cached: 6 compiled expressions (122 KiB source)
+
+  the same after Plain html: 1 runtime, heap reserves 808 KiB (367 KiB live at the last collection); 860 code units (955 KiB of instructions, positions and source); cached: 7 compiled expressions (123 KiB source)
+test script_speed ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 52.09s
+

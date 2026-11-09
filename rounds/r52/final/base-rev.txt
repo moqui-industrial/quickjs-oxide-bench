@@ -1,0 +1,1 @@
+mr-moqui fb0e5f78 (detached ../mr-moqui-r52base), fork 34ef6147, release + debug
