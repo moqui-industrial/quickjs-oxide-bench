@@ -1,0 +1,25 @@
+  this thread's engine, after the rows: 1 runtime, heap reserves 746 KiB (298 KiB live at the last collection); 556 code units (44
+  scripts by kind: run_script 1; runtimes started 1, texts compiled 1, heap 758 KiB (most 758 KiB)
+  threads: batch 1/2
+  threads: batch 2/2
+  operation                                        calls  median ms   us/call    calls/s    allocs      bytes      kept    sql    
+  1 threads: noop#Inline                             200      5.391     26.95      37102     115.3      22038      7125   0.00   0
+  1 threads: entity-find-one from actions, cached     200      3.051     15.25      65555      77.5      15624      7391   0.00   
+  1 threads: find from a script, database            200      7.066     35.33      28306     100.4      21870     10952   1.00   1
+  1 threads: List, html, 20 rows                      40     66.664   1666.61        600   11548.4     846562     49753   0.00   0
+  2 threads: noop#Inline                             400      6.158     15.39      64960     115.3      22038      7127   0.00   0
+  2 threads: entity-find-one from actions, cached     400      4.310     10.77      92814      77.5      15634      7393   0.00   
+  2 threads: find from a script, database            400      8.611     21.53      46452     100.4      21870     10956   1.00   1
+  2 threads: List, html, 20 rows                      80     86.682   1083.52        923   11548.4     846562     49751   0.00   0
+  4 threads: noop#Inline                             800      7.637      9.55     104756     115.3      22038      7125   0.00   0
+  4 threads: entity-find-one from actions, cached     800      5.104      6.38     156728      77.5      15624      7383   0.00   
+  4 threads: find from a script, database            800     13.851     17.31      57756     100.4      21870     10957   1.00   1
+  4 threads: List, html, 20 rows                     160    109.376    683.60       1463   11548.4     846562     49753   0.00   0
+  8 threads: noop#Inline                            1600     10.892      6.81     146892     115.3      22038      7129   0.00   0
+  8 threads: entity-find-one from actions, cached    1600      7.708      4.82     207589      77.5      15624      7386   0.00   
+  8 threads: find from a script, database           1600     28.185     17.62      56768     100.5      21895     10971   1.00   1
+  8 threads: List, html, 20 rows                     320    169.334    529.17       1890   11548.4     846562     49751   0.00   0
+  16 threads: noop#Inline                           3200     18.365      5.74     174249     115.3      22038      7127   0.00   0
+  16 threads: entity-find-one from actions, cached    3200     13.292      4.15     240750      77.5      15624      7387   0.00  
+  16 threads: find from a script, database          3200     79.348     24.80      40328     100.4      21878     10960   1.00   1
+  16 threads: List, html, 20 rows                    640    267.544    418.04       2392   11549.0     846849     49764   0.00   0

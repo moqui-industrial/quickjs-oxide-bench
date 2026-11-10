@@ -1,0 +1,52 @@
+
+running 1 test
+database: embedded Postgres, Unix socket
+
+transaction cache candidates, 100 calls x 3 batches, warmup 8. One transaction a call. ExecutionContext entered, authorization disabled, logged in as speed.a.
+  batch 1/3
+  batch 2/3
+  batch 3/3
+  operation                                        calls  median ms   us/call    calls/s    allocs      bytes      kept    sql     rt        min-max ms
+  S1 heartbeat#UserStatus, cache off                 100     23.703    237.03       4219    1365.5     128567     10286   6.24   7.24   23.701-25.954  
+  S3 send#Message, cache off                         100     91.067    910.67       1098    4326.3     454344     26581  13.00  14.00   89.746-96.384  
+  S2 mark#Read, cache off                            100     16.769    167.69       5963     900.0     102473     13381   3.00   4.00   15.718-18.278  
+  S4 update#WikiPage, cache off                      100    226.138   2261.38        442   12839.2    1803028     62236  75.00  76.00  200.514-250.648 
+  S5 set#MessageFlags, cache off                     100     87.961    879.61       1137    4615.0     516048     25658  14.02  16.04   84.859-88.597  
+  F4 audited update UserAccount.username, cache off     100      9.985     99.85      10015     424.1      56984      1816   3.02   4.04    9.710-11.136  
+  F5 fed update EmailMessage.isFlagged, cache off     100     38.306    383.06       2611    2185.6     277146     10377   7.02   9.04   37.229-38.801  
+  N1 mail store, 2 attachments, a cursor, cache off     100    199.206   1992.06        502    9355.2     943752     48846  47.19  52.39  192.897-204.280 
+  N2 react#Message, cache off                        100    115.776   1157.76        864    4900.1     488545     35417  20.50  21.50  111.264-118.664 
+  N3 mark#NotificationsViewed of 5, cache off        100     44.134    441.34       2266    1082.5     109645      4411   6.00   7.00   40.923-49.133  
+  N4 save#Draft, an autosave, cache off              100     93.975    939.75       1064    4481.9     524393     24930  15.05  16.96   93.848-99.707  
+  S1 heartbeat#UserStatus, cache on                  100     19.736    197.36       5067    1296.0     113738      6760   2.00   3.00   19.282-29.586  
+  S3 send#Message, cache on                          100     95.459    954.59       1048    4557.9     482830     22476   9.00  10.00   91.049-112.827 
+  S2 mark#Read, cache on                             100     16.567    165.67       6036     963.0     106442     18754   3.00   4.00   16.355-20.677  
+  S4 update#WikiPage, cache on                       100    182.065   1820.65        549   14172.5    2536679     18348  12.00  13.00  156.698-211.885 
+  S5 set#MessageFlags, cache on                      100     89.483    894.83       1118    5028.8     537019     27354  10.02  12.04   88.541-92.580  
+  F1 notification persist, 3 users, cache on         100     12.891    128.91       7758     783.9      88673       268   2.02   4.04   12.738-13.754  
+  F4 audited update UserAccount.username, cache on     100      8.960     89.60      11160     515.1      71619       929   1.02   2.04    8.693-9.814   
+  F5 fed update EmailMessage.isFlagged, cache on     100     39.297    392.97       2545    2356.3     290075      9783   4.02   6.04   37.840-46.858  
+  N1 mail store, 2 attachments, a cursor, cache on     100    183.126   1831.26        546    8980.2     952939     38613  19.91  25.12  166.843-183.191 
+  N2 react#Message, cache on                         100    116.939   1169.39        855    5213.3     536180     31373  15.00  16.00  110.809-141.617 
+  N3 mark#NotificationsViewed of 5, cache on         100     39.476    394.76       2533    1204.3     127876      5194   1.00   2.00   38.815-50.365  
+  N4 save#Draft, an autosave, cache on               100     90.976    909.76       1099    4638.5     509522     11749   9.02  10.88   90.818-92.142  
+  F3 session start and password login, cache on      100   1122.860  11228.60         89     749.7   20011178      3514   3.01   6.02 1119.839-1150.021
+
+  transaction cache per call                      frames    held   mem rd    db rd    early batch st batch rt
+  F1 notification persist, 3 users, cache on        2.00    4.00     0.00     0.00     0.00     4.00     0.00
+  F3 session start and password login, cache on     1.00    3.00     0.00     0.00     0.00     2.00     0.00
+  F4 audited update UserAccount.username, cache on    1.00    2.00     0.00     1.00     0.00     2.00     0.00
+  F5 fed update EmailMessage.isFlagged, cache on    1.00    2.00     1.00     4.00     0.00     2.00     0.00
+  N1 mail store, 2 attachments, a cursor, cache on    4.00   13.00    14.29    11.71     0.00    13.00     0.00
+  N2 react#Message, cache on                        1.00    5.50     0.00    14.00     0.00     4.50     0.00
+  N3 mark#NotificationsViewed of 5, cache on        1.00    5.00     0.00     1.00     0.00     5.00     0.00
+  N4 save#Draft, an autosave, cache on              1.00    2.02     4.02     9.00     0.00     2.00     0.00
+  S1 heartbeat#UserStatus, cache on                 1.00    0.24     4.00     2.00     0.00     0.24     0.00
+  S2 mark#Read, cache on                            1.00    0.00     0.00     3.00     0.00     0.00     0.00
+  S3 send#Message, cache on                         1.00    3.00     1.00     8.00     0.00     3.00     0.00
+  S4 update#WikiPage, cache on                      1.00    4.00    59.00    12.00     0.00     4.00     0.00
+  S5 set#MessageFlags, cache on                     1.00    2.00     2.00    10.00     0.00     2.00     0.00
+test tx_cache_speed ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 11.93s
+
