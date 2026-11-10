@@ -1,0 +1,1248 @@
+{
+  "binSeconds": 1,
+  "bins": [
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 44.986,
+      "mean": 18.931,
+      "p50": 18.352,
+      "p95": 41.545,
+      "p99": 44.986,
+      "requests": 56,
+      "t": 0,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 64.941,
+      "mean": 36.284,
+      "p50": 38.566,
+      "p95": 52.897,
+      "p99": 59.455,
+      "requests": 132,
+      "t": 1,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 289.693,
+      "mean": 88.921,
+      "p50": 57.467,
+      "p95": 257.672,
+      "p99": 263.794,
+      "requests": 106,
+      "t": 2,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 312.138,
+      "mean": 106.166,
+      "p50": 77.842,
+      "p95": 268.573,
+      "p99": 306.465,
+      "requests": 108,
+      "t": 3,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 134.853,
+      "mean": 35.946,
+      "p50": 29.729,
+      "p95": 57.821,
+      "p99": 114.074,
+      "requests": 140,
+      "t": 4,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 193.277,
+      "mean": 38.475,
+      "p50": 24.875,
+      "p95": 100.802,
+      "p99": 164.318,
+      "requests": 140,
+      "t": 5,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 194.843,
+      "mean": 29.701,
+      "p50": 30.248,
+      "p95": 48.272,
+      "p99": 53.978,
+      "requests": 138,
+      "t": 6,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 237.963,
+      "mean": 63.221,
+      "p50": 49.588,
+      "p95": 217.373,
+      "p99": 234.226,
+      "requests": 114,
+      "t": 7,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 289.111,
+      "mean": 99.408,
+      "p50": 62.852,
+      "p95": 265.901,
+      "p99": 275.901,
+      "requests": 112,
+      "t": 8,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 107.365,
+      "mean": 41.066,
+      "p50": 37.22,
+      "p95": 74.455,
+      "p99": 104.562,
+      "requests": 124,
+      "t": 9,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 95.118,
+      "mean": 34.803,
+      "p50": 27.465,
+      "p95": 64.256,
+      "p99": 91.838,
+      "requests": 139,
+      "t": 10,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 55.712,
+      "mean": 25.042,
+      "p50": 21.785,
+      "p95": 45.366,
+      "p99": 52.416,
+      "requests": 126,
+      "t": 11,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 646.096,
+      "mean": 190.417,
+      "p50": 67.108,
+      "p95": 600.706,
+      "p99": 646.096,
+      "requests": 90,
+      "t": 12,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 299.881,
+      "mean": 95.028,
+      "p50": 59.75,
+      "p95": 278.573,
+      "p99": 296.258,
+      "requests": 104,
+      "t": 13,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 299.482,
+      "mean": 96.854,
+      "p50": 66.4,
+      "p95": 273.694,
+      "p99": 299.442,
+      "requests": 114,
+      "t": 14,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 245.781,
+      "mean": 37.94,
+      "p50": 31.872,
+      "p95": 69.063,
+      "p99": 138.376,
+      "requests": 134,
+      "t": 15,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 79.687,
+      "mean": 34.161,
+      "p50": 29.207,
+      "p95": 67.17,
+      "p99": 78.326,
+      "requests": 131,
+      "t": 16,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 197.306,
+      "mean": 29.192,
+      "p50": 29.444,
+      "p95": 51.367,
+      "p99": 55.937,
+      "requests": 137,
+      "t": 17,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 246.647,
+      "mean": 55.629,
+      "p50": 48.173,
+      "p95": 74.973,
+      "p99": 233.291,
+      "requests": 122,
+      "t": 18,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 300.542,
+      "mean": 107.319,
+      "p50": 65.461,
+      "p95": 278.383,
+      "p99": 298.377,
+      "requests": 106,
+      "t": 19,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 276.166,
+      "mean": 47.832,
+      "p50": 38.783,
+      "p95": 100.583,
+      "p99": 253.097,
+      "requests": 128,
+      "t": 20,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 117.067,
+      "mean": 39.426,
+      "p50": 31.612,
+      "p95": 80.664,
+      "p99": 100.877,
+      "requests": 135,
+      "t": 21,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 192.277,
+      "mean": 29.741,
+      "p50": 25.294,
+      "p95": 57.847,
+      "p99": 62.734,
+      "requests": 138,
+      "t": 22,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 243.903,
+      "mean": 45.784,
+      "p50": 45.002,
+      "p95": 60.097,
+      "p99": 235.447,
+      "requests": 129,
+      "t": 23,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 300.259,
+      "mean": 92.504,
+      "p50": 54.686,
+      "p95": 287.75,
+      "p99": 300.259,
+      "requests": 98,
+      "t": 24,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 340.723,
+      "mean": 81.595,
+      "p50": 54.453,
+      "p95": 284.321,
+      "p99": 318.666,
+      "requests": 124,
+      "t": 25,
+      "users": 32
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 102.311,
+      "mean": 36.172,
+      "p50": 28.979,
+      "p95": 72.182,
+      "p99": 84.418,
+      "requests": 128,
+      "t": 26,
+      "users": 31
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 91.421,
+      "mean": 33.06,
+      "p50": 26.445,
+      "p95": 62.19,
+      "p99": 91.421,
+      "requests": 93,
+      "t": 27,
+      "users": 28
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 46.75,
+      "mean": 27.588,
+      "p50": 28.502,
+      "p95": 46.75,
+      "p99": 46.75,
+      "requests": 13,
+      "t": 28,
+      "users": 7
+    },
+    {
+      "dropped": 0,
+      "errors": 0,
+      "max": 32.465,
+      "mean": 32.465,
+      "p50": 32.465,
+      "p95": 32.465,
+      "p99": 32.465,
+      "requests": 1,
+      "t": 29,
+      "users": 1
+    }
+  ],
+  "dropped": 0,
+  "duration": 28.985,
+  "errorRate": 0.0,
+  "errorSamples": [],
+  "errors": 0,
+  "generator": {
+    "cores": 24,
+    "cpu": 0.006,
+    "scriptShare": 0.003,
+    "where": "same-machine"
+  },
+  "iterations": 160,
+  "latency": {
+    "max": 646.096,
+    "mean": 56.905,
+    "min": 5.17,
+    "p50": 41.727,
+    "p90": 89.599,
+    "p95": 230.399,
+    "p99": 301.055
+  },
+  "nameBinSeconds": 10,
+  "nameOrder": [
+    "login",
+    "dashboard",
+    "find orders",
+    "create order",
+    "add product item",
+    "add shipping charge",
+    "place order",
+    "approve order",
+    "order detail pdf",
+    "order pdf",
+    "ship order",
+    "find shipments",
+    "shipment detail",
+    "pick shipment",
+    "pack item",
+    "pack shipment",
+    "find invoices",
+    "invoice detail",
+    "record payment",
+    "order to cash"
+  ],
+  "names": {
+    "add product item": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 192,
+          "errors": 0,
+          "mean": 48.665,
+          "t": 0
+        },
+        {
+          "count": 192,
+          "errors": 0,
+          "mean": 78.667,
+          "t": 10
+        },
+        {
+          "count": 96,
+          "errors": 0,
+          "mean": 49.564,
+          "t": 20
+        }
+      ],
+      "count": 480,
+      "errors": 0,
+      "kind": "http",
+      "max": 608.938,
+      "mean": 60.846,
+      "min": 34.425,
+      "outcomes": {
+        "200": 480
+      },
+      "p50": 49.919,
+      "p90": 62.207,
+      "p95": 68.095,
+      "p99": 544.767,
+      "statuses": {
+        "200": 480
+      }
+    },
+    "add shipping charge": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 55.558,
+          "t": 0
+        },
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 58.566,
+          "t": 10
+        },
+        {
+          "count": 32,
+          "errors": 0,
+          "mean": 54.484,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 79.23,
+      "mean": 56.546,
+      "min": 40.845,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 57.087,
+      "p90": 66.047,
+      "p95": 69.119,
+      "p99": 78.335,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "approve order": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 50.117,
+          "t": 0
+        },
+        {
+          "count": 58,
+          "errors": 0,
+          "mean": 52.301,
+          "t": 10
+        },
+        {
+          "count": 38,
+          "errors": 0,
+          "mean": 47.545,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 71.66,
+      "mean": 50.298,
+      "min": 35.798,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 49.407,
+      "p90": 59.135,
+      "p95": 64.255,
+      "p99": 71.167,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "create order": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 34.349,
+          "t": 0
+        },
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 91.043,
+          "t": 10
+        },
+        {
+          "count": 32,
+          "errors": 0,
+          "mean": 36.487,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 563.569,
+      "mean": 57.454,
+      "min": 26.925,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 35.071,
+      "p90": 49.919,
+      "p95": 234.495,
+      "p99": 552.959,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "dashboard": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 8.254,
+          "t": 0
+        },
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 13.643,
+          "t": 10
+        },
+        {
+          "count": 32,
+          "errors": 0,
+          "mean": 8.501,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 202.952,
+      "mean": 10.459,
+      "min": 5.17,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 8.159,
+      "p90": 10.815,
+      "p95": 11.455,
+      "p99": 87.551,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "find invoices": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 33,
+          "errors": 0,
+          "mean": 22.262,
+          "t": 0
+        },
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 22.324,
+          "t": 10
+        },
+        {
+          "count": 63,
+          "errors": 0,
+          "mean": 22.147,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 29.908,
+      "mean": 22.241,
+      "min": 15.762,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 21.887,
+      "p90": 26.495,
+      "p95": 27.775,
+      "p99": 29.823,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "find orders": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 33.107,
+          "t": 0
+        },
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 62.046,
+          "t": 10
+        },
+        {
+          "count": 32,
+          "errors": 0,
+          "mean": 34.342,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 411.871,
+      "mean": 44.929,
+      "min": 23.819,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 33.023,
+      "p90": 45.823,
+      "p95": 51.967,
+      "p99": 374.783,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "find shipments": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 61,
+          "errors": 0,
+          "mean": 32.409,
+          "t": 0
+        },
+        {
+          "count": 39,
+          "errors": 0,
+          "mean": 34.195,
+          "t": 10
+        },
+        {
+          "count": 60,
+          "errors": 0,
+          "mean": 31.131,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 62.391,
+      "mean": 32.365,
+      "min": 18.796,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 31.359,
+      "p90": 42.239,
+      "p95": 46.847,
+      "p99": 62.207,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "invoice detail": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 33,
+          "errors": 0,
+          "mean": 21.302,
+          "t": 0
+        },
+        {
+          "count": 63,
+          "errors": 0,
+          "mean": 20.738,
+          "t": 10
+        },
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 21.808,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 34.026,
+      "mean": 21.282,
+      "min": 14.668,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 20.607,
+      "p90": 25.215,
+      "p95": 26.751,
+      "p99": 33.535,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "login": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 19.268,
+          "t": 0
+        },
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 31.93,
+          "t": 10
+        },
+        {
+          "count": 32,
+          "errors": 0,
+          "mean": 19.644,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 381.372,
+      "mean": 24.408,
+      "min": 16.863,
+      "outcomes": {
+        "302": 160
+      },
+      "p50": 19.327,
+      "p90": 21.631,
+      "p95": 22.655,
+      "p99": 236.543,
+      "statuses": {
+        "302": 160
+      }
+    },
+    "order detail pdf": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 100.078,
+          "t": 0
+        },
+        {
+          "count": 51,
+          "errors": 0,
+          "mean": 97.992,
+          "t": 10
+        },
+        {
+          "count": 45,
+          "errors": 0,
+          "mean": 92.076,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 202.437,
+      "mean": 97.163,
+      "min": 49.019,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 90.623,
+      "p90": 146.431,
+      "p95": 162.815,
+      "p99": 199.679,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "order pdf": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 81.402,
+          "t": 0
+        },
+        {
+          "count": 43,
+          "errors": 0,
+          "mean": 80.474,
+          "t": 10
+        },
+        {
+          "count": 53,
+          "errors": 0,
+          "mean": 68.533,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 179.105,
+      "mean": 76.89,
+      "min": 32.477,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 66.047,
+      "p90": 136.191,
+      "p95": 146.431,
+      "p99": 175.103,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "order to cash": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 32,
+          "errors": 0,
+          "mean": 1174.23,
+          "t": 0
+        },
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 1320.546,
+          "t": 10
+        },
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 1118.114,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "step",
+      "max": 1805.906,
+      "mean": 1210.31,
+      "min": 978.257,
+      "outcomes": {
+        "ok": 160
+      },
+      "p50": 1138.687,
+      "p90": 1564.671,
+      "p95": 1662.975,
+      "p99": 1794.047
+    },
+    "pack item": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 42,
+          "errors": 0,
+          "mean": 60.608,
+          "t": 0
+        },
+        {
+          "count": 55,
+          "errors": 0,
+          "mean": 49.894,
+          "t": 10
+        },
+        {
+          "count": 63,
+          "errors": 0,
+          "mean": 54.953,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 127.476,
+      "mean": 54.699,
+      "min": 32.639,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 50.431,
+      "p90": 71.167,
+      "p95": 85.503,
+      "p99": 121.343,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "pack shipment": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 37,
+          "errors": 0,
+          "mean": 62.189,
+          "t": 0
+        },
+        {
+          "count": 60,
+          "errors": 0,
+          "mean": 56.893,
+          "t": 10
+        },
+        {
+          "count": 63,
+          "errors": 0,
+          "mean": 58.107,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 193.277,
+      "mean": 58.596,
+      "min": 36.476,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 52.479,
+      "p90": 79.359,
+      "p95": 90.623,
+      "p99": 146.431,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "pick shipment": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 48,
+          "errors": 0,
+          "mean": 27.233,
+          "t": 0
+        },
+        {
+          "count": 49,
+          "errors": 0,
+          "mean": 28.477,
+          "t": 10
+        },
+        {
+          "count": 63,
+          "errors": 0,
+          "mean": 29.081,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 61.516,
+      "mean": 28.342,
+      "min": 19.34,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 27.007,
+      "p90": 35.071,
+      "p95": 39.679,
+      "p99": 48.895,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "place order": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 249.594,
+          "t": 0
+        },
+        {
+          "count": 62,
+          "errors": 0,
+          "mean": 269.97,
+          "t": 10
+        },
+        {
+          "count": 34,
+          "errors": 0,
+          "mean": 270.616,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 646.096,
+      "mean": 261.957,
+      "min": 189.573,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 261.119,
+      "p90": 292.863,
+      "p95": 301.055,
+      "p99": 342.015,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "record payment": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 32,
+          "errors": 0,
+          "mean": 44.145,
+          "t": 0
+        },
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 56.217,
+          "t": 10
+        },
+        {
+          "count": 64,
+          "errors": 0,
+          "mean": 41.853,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 642.513,
+      "mean": 48.057,
+      "min": 25.027,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 36.607,
+      "p90": 58.111,
+      "p95": 68.095,
+      "p99": 602.111,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "ship order": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 63,
+          "errors": 0,
+          "mean": 39.655,
+          "t": 0
+        },
+        {
+          "count": 38,
+          "errors": 0,
+          "mean": 40.541,
+          "t": 10
+        },
+        {
+          "count": 59,
+          "errors": 0,
+          "mean": 39.161,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 71.692,
+      "mean": 39.683,
+      "min": 24.118,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 38.655,
+      "p90": 46.847,
+      "p95": 48.895,
+      "p99": 59.135,
+      "statuses": {
+        "200": 160
+      }
+    },
+    "shipment detail": {
+      "binSeconds": 10,
+      "bins": [
+        {
+          "count": 53,
+          "errors": 0,
+          "mean": 27.142,
+          "t": 0
+        },
+        {
+          "count": 45,
+          "errors": 0,
+          "mean": 27.085,
+          "t": 10
+        },
+        {
+          "count": 62,
+          "errors": 0,
+          "mean": 27.086,
+          "t": 20
+        }
+      ],
+      "count": 160,
+      "errors": 0,
+      "kind": "http",
+      "max": 47.18,
+      "mean": 27.104,
+      "min": 17.542,
+      "outcomes": {
+        "200": 160
+      },
+      "p50": 25.471,
+      "p90": 35.583,
+      "p95": 38.143,
+      "p99": 46.335,
+      "statuses": {
+        "200": 160
+      }
+    }
+  },
+  "passed": true,
+  "requests": 3360,
+  "rps": 115.9,
+  "run": {
+    "end": "2026-11-10T20:50:17.735102108Z",
+    "generator": "same-machine",
+    "label": "MR pool 16 32",
+    "params": {
+      "appPath": "/apps/marble",
+      "customerPartyId": "CustJqp",
+      "facilityId": "ZIRET_WH",
+      "logout": false,
+      "orderItems": 3,
+      "pdf": true,
+      "productId": "DEMO_1_1",
+      "quantity": 10,
+      "user": "john.doe",
+      "vendorPartyId": "ORG_ZIZI_RETAIL"
+    },
+    "scenarios": {
+      "sales": {
+        "duration": null,
+        "iterations": 5,
+        "newSession": true,
+        "pause": {
+          "gaussian": [
+            200.0,
+            50.0
+          ]
+        },
+        "rampUp": 1.0,
+        "rate": null,
+        "stages": null,
+        "think": null,
+        "users": 32
+      }
+    },
+    "script": "component://mr-marble/test/load/OrderToCash.load.js",
+    "start": "2026-11-10T20:49:48.721123595Z",
+    "status": "completed",
+    "stopReason": null,
+    "target": "http://localhost:8091"
+  },
+  "scenarios": {
+    "sales": {
+      "errors": 0,
+      "iterations": 160,
+      "users": 32
+    }
+  },
+  "thresholds": [
+    {
+      "limit": 0.0,
+      "metric": "errorRate",
+      "name": null,
+      "passed": true,
+      "value": 0.0
+    }
+  ],
+  "users": 32
+}

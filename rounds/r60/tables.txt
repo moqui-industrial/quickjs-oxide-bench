@@ -1,0 +1,138 @@
+== head2
+10 users, 28.6 s: 1,033 requests, 36.1/s, 12 errors
+name                   count  errors    p50    p95    p99    max
+login                     50       0   18ms   39ms  196ms  196ms
+dashboard                 50       0  7.3ms  9.4ms   11ms   11ms
+find orders               50       0   26ms   45ms  514ms  515ms
+create order              50       0   29ms   43ms  1581ms  1586ms
+add product item         150       0   38ms   44ms   49ms   51ms
+add shipping charge       50       0   38ms   47ms   57ms   57ms
+place order               50       0   57ms   64ms   65ms   65ms
+approve order             50       0   32ms   41ms   42ms   42ms
+order detail pdf          50       0   45ms   56ms   58ms   58ms
+order pdf                 50       0   33ms   45ms   49ms   49ms
+ship order                50       0   30ms   36ms   41ms   41ms
+find shipments            50       0   18ms   24ms   27ms   27ms
+shipment detail           50       0   21ms   29ms  799ms  802ms
+pick shipment             50       0   21ms   30ms   37ms   37ms
+pack item                 50       2   37ms  897ms  1019ms  1019ms
+pack shipment             48       2   40ms  2040ms  2208ms  2208ms
+find invoices             45       0   18ms   23ms   27ms   27ms
+invoice detail            45       0   18ms   23ms   25ms   25ms
+record payment            45       0   31ms  1925ms  2179ms  2191ms
+order to cash             50      12  684ms  2671ms  2833ms  2833ms
+== u1
+1 users, 25.1 s: 105 requests, 4.2/s, 0 errors
+name                   count  errors    p50    p95    p99    max
+login                      5       0   22ms   23ms   23ms   23ms
+dashboard                  5       0  9.4ms   10ms   10ms   10ms
+find orders                5       0   34ms   36ms   36ms   36ms
+create order               5       0   36ms   36ms   36ms   36ms
+add product item          15       0   45ms   51ms   51ms   51ms
+add shipping charge        5       0   45ms   63ms   63ms   63ms
+place order                5       0   78ms   83ms   83ms   83ms
+approve order              5       0   42ms   46ms   46ms   46ms
+order detail pdf           5       0   55ms   57ms   57ms   57ms
+order pdf                  5       0   40ms   41ms   41ms   41ms
+ship order                 5       0   40ms   46ms   46ms   46ms
+find shipments             5       0   20ms   24ms   24ms   24ms
+shipment detail            5       0   26ms   32ms   32ms   32ms
+pick shipment              5       0   30ms   41ms   41ms   41ms
+pack item                  5       0   48ms   59ms   59ms   59ms
+pack shipment              5       0   49ms   58ms   58ms   58ms
+find invoices              5       0   24ms   25ms   25ms   25ms
+invoice detail             5       0   22ms   23ms   23ms   23ms
+record payment             5       0   38ms   43ms   43ms   43ms
+order to cash              5       0  807ms  856ms  856ms  859ms
+== u4
+4 users, 26.3 s: 420 requests, 16.0/s, 0 errors
+name                   count  errors    p50    p95    p99    max
+login                     20       0   21ms   23ms   24ms   24ms
+dashboard                 20       0  9.2ms   13ms   14ms   14ms
+find orders               20       0   35ms   42ms   44ms   44ms
+create order              20       0   35ms   41ms   45ms   45ms
+add product item          60       0   46ms   54ms   56ms   56ms
+add shipping charge       20       0   47ms   56ms   58ms   58ms
+place order               20       0   74ms   79ms   81ms   82ms
+approve order             20       0   41ms   46ms   50ms   50ms
+order detail pdf          20       0   50ms   54ms   54ms   54ms
+order pdf                 20       0   39ms   44ms   46ms   46ms
+ship order                20       0   37ms   42ms   42ms   42ms
+find shipments            20       0   22ms   28ms   28ms   28ms
+shipment detail           20       0   25ms   32ms   32ms   32ms
+pick shipment             20       0   30ms   33ms   35ms   35ms
+pack item                 20       0   49ms   58ms   59ms   59ms
+pack shipment             20       0   50ms   57ms   61ms   61ms
+find invoices             20       0   22ms   27ms   30ms   30ms
+invoice detail            20       0   21ms   25ms   26ms   26ms
+record payment            20       0   36ms   41ms   44ms   44ms
+order to cash             20       0  799ms  823ms  831ms  836ms
+== u16
+16 users, 32.4 s: 1,656 requests, 51.1/s, 16 errors
+name                   count  errors    p50    p95    p99    max
+login                     80       0   21ms  774ms  864ms  867ms
+dashboard                 80       0  8.5ms   34ms  758ms  759ms
+find orders               80       0   32ms  403ms  1479ms  1479ms
+create order              80       0   36ms  432ms  2825ms  2825ms
+add product item         240       0   46ms   57ms   66ms   73ms
+add shipping charge       80       0   48ms   58ms   63ms   63ms
+place order               80       0   87ms  101ms  109ms  109ms
+approve order             80       0   43ms   55ms   69ms   69ms
+order detail pdf          80       0   64ms   91ms  127ms  127ms
+order pdf                 80       0   50ms   88ms  119ms  119ms
+ship order                80       0   38ms   45ms   52ms   52ms
+find shipments            80       0   27ms   37ms   41ms   41ms
+shipment detail           80       0   25ms   34ms   39ms   39ms
+pick shipment             80       0   27ms   34ms   39ms   39ms
+pack item                 80       0   50ms  954ms  1090ms  1097ms
+pack shipment             80       6   55ms  1925ms  3981ms  3988ms
+find invoices             72       0   22ms   28ms  803ms  803ms
+invoice detail            72       0   22ms  1401ms  1656ms  1656ms
+record payment            72       0   40ms  2572ms  3870ms  3870ms
+order to cash             80      16  1810ms  4293ms  5194ms  5194ms
+== p8-32
+32 users, 27.6 s: 3,360 requests, 121.9/s, 0 errors
+name                   count  errors    p50    p95    p99    max
+login                    160       0   19ms   24ms   43ms  110ms
+dashboard                160       0  7.0ms   10ms   18ms   18ms
+find orders              160       0   30ms   39ms   45ms   50ms
+create order             160       0   32ms   42ms   55ms   56ms
+add product item         480       0   45ms   87ms  179ms  211ms
+add shipping charge      160       0   56ms  167ms  191ms  191ms
+place order              160       0  202ms  305ms  322ms  329ms
+approve order            160       0   57ms  136ms  169ms  172ms
+order detail pdf         160       0   74ms  125ms  140ms  150ms
+order pdf                160       0   53ms   94ms  121ms  142ms
+ship order               160       0   35ms  103ms  163ms  183ms
+find shipments           160       0   27ms   71ms  102ms  104ms
+shipment detail          160       0   22ms   36ms   51ms   51ms
+pick shipment            160       0   24ms   40ms   68ms   75ms
+pack item                160       0   42ms   67ms   88ms   92ms
+pack shipment            160       0   48ms   80ms  151ms  156ms
+find invoices            160       0   19ms   25ms   34ms   39ms
+invoice detail           160       0   18ms   26ms   33ms   47ms
+record payment           160       0   31ms   75ms  108ms  152ms
+order to cash            160       0  1057ms  1155ms  1237ms  1243ms
+== p16-32
+32 users, 29.0 s: 3,360 requests, 115.9/s, 0 errors
+name                   count  errors    p50    p95    p99    max
+login                    160       0   19ms   23ms  237ms  381ms
+dashboard                160       0  8.2ms   11ms   88ms  203ms
+find orders              160       0   33ms   52ms  375ms  412ms
+create order             160       0   35ms  234ms  553ms  564ms
+add product item         480       0   50ms   68ms  545ms  609ms
+add shipping charge      160       0   57ms   69ms   78ms   79ms
+place order              160       0  261ms  301ms  342ms  646ms
+approve order            160       0   49ms   64ms   71ms   72ms
+order detail pdf         160       0   91ms  163ms  200ms  202ms
+order pdf                160       0   66ms  146ms  175ms  179ms
+ship order               160       0   39ms   49ms   59ms   72ms
+find shipments           160       0   31ms   47ms   62ms   62ms
+shipment detail          160       0   25ms   38ms   46ms   47ms
+pick shipment            160       0   27ms   40ms   49ms   62ms
+pack item                160       0   50ms   86ms  121ms  127ms
+pack shipment            160       0   52ms   91ms  146ms  193ms
+find invoices            160       0   22ms   28ms   30ms   30ms
+invoice detail           160       0   21ms   27ms   34ms   34ms
+record payment           160       0   37ms   68ms  602ms  643ms
+order to cash            160       0  1139ms  1663ms  1794ms  1806ms
